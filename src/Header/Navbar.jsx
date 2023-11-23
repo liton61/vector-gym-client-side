@@ -1,8 +1,3 @@
-// import { NavLink } from "react-router-dom";
-// import logo from '../../assets/logo (1).png';
-// import { useContext, useState } from "react";
-// import { AuthContext } from "../Provider/AuthProvider";
-
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { NavLink } from "react-router-dom";
@@ -11,18 +6,9 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const [active, setActive] = useState(false)
-    // const handleSingOut = () => {
-    //     logOut()
-    //         .then(result => {
-    //             console.log(result.user)
-    //         })
-    //         .catch(error => {
-    //             console.error(error);
-    //         })
-    // }
     return (
         <div>
-            <div className="navbar bg-green-300">
+            <div className="navbar bg-[#ffd166]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -88,16 +74,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {/* {
-                        user ?
-                            <div className='flex'>
-                                <img className='w-12 mr-2 rounded-full h-12' src={user?.photoURL} alt="" />
-                                <h2 className="flex items-center text-sm font-medium mr-2">{user?.displayName}</h2>
-                                <Link onClick={handleSingOut} to="/login" className="btn btn-active btn-neutral text-sm">Sign Out</Link>
-                            </div>
-                            :
-                            <Link to="/login" className="btn btn-active btn-neutral text-sm">Login</Link>
-                    } */}
                     {user?.email ? (
                         <div className="dropdown dropdown-end ">
                             <label tabIndex={0} className="cursor-pointer">
