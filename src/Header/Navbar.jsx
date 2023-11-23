@@ -20,21 +20,25 @@ const Navbar = () => {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/addJob"
+                                to="/gallery"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>Add Jobs</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Gallery</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/myPostedJobs"
+                                to="/trainer"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>My Posted Jobs</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Trainer</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/myBids"
+                                to="/classes"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>My Bids</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Classes</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/bidRequests"
+                                to="/dashboard"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>Bid Requests</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
+                            <li className="mx-2 font-medium"><NavLink
+                                to="/community"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Community</NavLink></li>
                         </ul>
                     </div>
                     <div>
@@ -48,29 +52,25 @@ const Navbar = () => {
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/addJob"
+                            to="/gallery"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>Add Jobs</NavLink></li>
-                        {user && (
-                            <li className="mx-2 font-medium">
-                                <NavLink
-                                    to="/myPostedJobs"
-                                    className={({ isActive, isPending }) =>
-                                        isPending ? "pending" : isActive ? "active" : ""
-                                    }
-                                >
-                                    My Posted Jobs
-                                </NavLink>
-                            </li>
-                        )}
+                                isPending ? "pending" : isActive ? "active" : ""}>Gallery</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/myBids"
+                            to="/trainer"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>My Bids</NavLink></li>
+                                isPending ? "pending" : isActive ? "active" : ""}>Trainer</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/bidRequests"
+                            to="/classes"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>Bid Requests</NavLink></li>
+                                isPending ? "pending" : isActive ? "active" : ""}>Classes</NavLink></li>
+                        <li className="mx-2 font-medium"><NavLink
+                            to="/dashboard"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
+                        <li className="mx-2 font-medium"><NavLink
+                            to="/community"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""}>Community</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
