@@ -1,0 +1,20 @@
+[
+    {
+        "image": "https://i.postimg.cc/1t7XLYpq/profile1.png",
+        "name": "Coach Sarah Johnson",
+        "experience": "With over 10 years of experience in personal training, Sarah specializes in strength and conditioning...",
+        "info": "Sarah is dedicated to helping individuals achieve their fitness goals through personalized training programs tailored..."
+    },
+    {
+        "image": "https://i.postimg.cc/MHhTGM3Z/profile2.webp",
+        "name": "Coach Mark Rodriguez",
+        "experience": "Mark has coached high school basketball teams for 15 years, focusing on skill development and mental toughness training...",
+        "info": "Mark's coaching philosophy revolves around building not just better players but also better individuals on and off the court."
+    },
+    {
+        "image": "https://i.postimg.cc/YqW0sRjv/profile3.png",
+        "name": "Trainer Emily Chen",
+        "experience": "Emily is a seasoned yoga and mindfulness instructor with a decade of experience...",
+        "info": "Emily specializes in meditation, stress reduction techniques, and creating tailored mindfulness programs for mental..."
+    }
+]
