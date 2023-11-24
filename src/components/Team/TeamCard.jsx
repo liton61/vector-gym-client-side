@@ -11,10 +11,10 @@ const TeamCard = ({ team }) => {
                     <img className="w-52 mx-auto" src={image} alt="Profile Picture" />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{name}</div>
-                        <p className="text-gray-700 text-base">
+                        <p className="text-gray-700 text-base text-justify">
                             <strong>Experience : </strong>{experience}
                         </p>
-                        <p className="text-gray-700 text-base">
+                        <p className="text-gray-700 text-base text-justify">
                             <strong>Expertise : </strong> {info}
                         </p>
                     </div>

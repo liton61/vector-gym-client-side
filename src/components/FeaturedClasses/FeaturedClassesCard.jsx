@@ -11,7 +11,7 @@ const FeaturedClassesCard = ({ item }) => {
                 <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <img src={image} />
                 </div>
-                <p className="text-gray-600 mt-2">Instructor: {instructor}</p>
+                <p className="text-gray-600 mt-2 font-medium">Instructor: {instructor}</p>
             </div>
         </div>
     );
