@@ -52,7 +52,7 @@ const SubscribeForm = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-[#f72585] text-white py-2 px-4 rounded focus:outline-none justify-center"
+                        className="btn btn-active btn-secondary justify-center"
                     >
                         Subscribe Now
                     </button>

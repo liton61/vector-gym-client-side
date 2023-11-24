@@ -1,39 +1,17 @@
-import slider1 from '../../src/assets/slider (1).jpg';
-import slider2 from '../../src/assets/slider (2).jpg';
-import slider3 from '../../src/assets/slider (3).jpg';
-import slider4 from '../../src/assets/slider (4).jpg';
+import { Link } from "react-router-dom";
+
 
 const Slider = () => {
     return (
-        <div>
-            <div className="carousel w-full h-[90vh]">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src={slider1} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src={slider2} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src={slider3} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img src={slider4} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
+        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.postimg.cc/xj6ZTNY3/slider-4.jpg)' }}>
+            <div className="hero-overlay bg-opacity-50"></div>
+            <div className="hero-content text-center text-neutral-content">
+                <div className="max-w-md">
+                    <h1 className="mb-5 text-5xl font-bold">Building a Healthier Lifestyle</h1>
+                    <p className="mb-5">A gym is a dedicated space designed to support physical fitness and health goals. Equipped with a variety of exercise machines, weights, and facilities, it provides an environment where individuals engage in workouts, strength training, cardio exercises, and group fitness classes.</p>
+                    <Link to="/classes">
+                    <button className="btn btn-active btn-secondary">Learn More <i className="fa-solid fa-arrow-right"></i></button>
+                    </Link>
                 </div>
             </div>
         </div>
