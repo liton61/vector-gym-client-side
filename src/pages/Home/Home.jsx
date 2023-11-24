@@ -1,4 +1,5 @@
 import Slider from "../../Header/Slider";
+import About from "../../components/About";
 import Features from "../../components/Features/Features";
 
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Features></Features>
+            <About></About>
         </div>
     );
 };
