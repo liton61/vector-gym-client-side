@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Alice Johnson",
+        "image": "https://i.postimg.cc/3r68Nsfb/instructor-3.png",
+        "experience": "12 Years Experience",
+        "slot": "10:00 - 11:00 AM"
+    },
+    {
+        "name": "Bob Smith",
+        "image": "https://i.postimg.cc/jd7s7MGq/instructor-2.png",
+        "experience":"8 Years Experience",
+        "slot": "10:00 - 11:00 AM"
+    },
+    {
+        "name": "Eva Brown",
+        "image": "https://i.postimg.cc/5tn1VTFg/instructor-1.png",
+        "experience":"15 Years Experience",
+        "slot": "10:00 - 11:00 AM"
+    }
+]
