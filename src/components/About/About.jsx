@@ -1,7 +1,7 @@
-import about from '../assets/about.webp';
-import profile1 from '../assets/profile1.png';
-import profile2 from '../assets/profile2.webp';
-import profile3 from '../assets/profile3.png';
+import about from '../../assets/about.webp';
+import profile1 from '../../assets/profile1.png';
+import profile2 from '../../assets/profile2.webp';
+import profile3 from '../../assets/profile3.png';
 
 const About = () => {
     return (
@@ -49,7 +49,7 @@ const About = () => {
                             </div>
                         </div>
                         <div>
-                        <i className="fa-solid fa-star text-yellow-500"></i>
+                            <i className="fa-solid fa-star text-yellow-500"></i>
                             <i className="fa-solid fa-star text-yellow-500"></i>
                             <i className="fa-solid fa-star text-yellow-500"></i>
                             <i className="fa-solid fa-star text-yellow-500"></i>
