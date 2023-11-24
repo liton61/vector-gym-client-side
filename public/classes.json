@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Yoga Flow",
+        "description": "Improve flexibility and find inner peace through fluid yoga movements.",
+        "instructor": "Jane Doe",
+        "image": "https://i.postimg.cc/hvHcYm7q/instructor-1.webp"
+    },
+    {
+        "id": 2,
+        "title": "HIIT Workout",
+        "description": "High-intensity interval training to boost metabolism and burn fat.",
+        "instructor": "John Smith",
+        "image": "https://i.postimg.cc/5tn1VTFg/instructor-1.png"
+    },
+    {
+        "id": 3,
+        "title": "Pilates Core",
+        "description": "Strengthen your core and improve posture with controlled movements.",
+        "instructor": "Emily Johnson",
+        "image": "https://i.postimg.cc/HxkY8dCF/instructor-1.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Spin Cycling",
+        "description": "Intense cycling sessions to improve cardiovascular endurance and leg strength.",
+        "instructor": "Alex Turner",
+        "image": "https://i.postimg.cc/gjwG4sjD/instructor-2.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Zumba Dance",
+        "description": "Energetic dance workouts for a fun and effective way to burn calories.",
+        "instructor": "Maria Garcia",
+        "image": "https://i.postimg.cc/jd7s7MGq/instructor-2.png"
+    },
+    {
+        "id": 6,
+        "title": "Boxing Fitness",
+        "description": "Learn boxing techniques while getting a full-body workout.",
+        "instructor": "Mike Johnson",
+        "image": "https://i.postimg.cc/3r68Nsfb/instructor-3.png"
+    }
+]
