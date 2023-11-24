@@ -1,0 +1,32 @@
+[
+    {
+        "image": "https://i.postimg.cc/L64QB2gQ/abs.png",
+        "title": "Abs Gain",
+        "description": "Get your heart pumping with our intense cardio workouts designed to burn calories and improve endurance."
+    },
+    {
+        "image": "https://i.postimg.cc/wvh4FBkZ/gym.png",
+        "title": "Body Building",
+        "description": "Build muscle, increase strength, and tone your body with our range of cutting-edge strength training equipment."
+    },
+    {
+        "image": "https://i.postimg.cc/zv7tZP6k/lotus.png",
+        "title": "Yoga & Meditation",
+        "description": "Find your balance, flexibility, and inner peace through our diverse yoga classes and meditation sessions."
+    },
+    {
+        "image": "https://i.postimg.cc/nhCdg2kv/muscle.png",
+        "title": "Muscle Gain",
+        "description": "Get expert advice on nutrition and meal planning to support your fitness goals and overall well-being."
+    },
+    {
+        "image": "https://i.postimg.cc/zv8tQ1tB/slim.png",
+        "title": "Weight Loss",
+        "description": "Unwind and recharge in our dedicated relaxation area equipped with massage chairs and rejuvenating amenities."
+    },
+    {
+        "image": "https://i.postimg.cc/dQjSyL3T/training.png",
+        "title": "Running Session",
+        "description": "Enjoy the convenience of round-the-clock access to our gym facilities, tailored to fit your busy schedule."
+    }
+]
