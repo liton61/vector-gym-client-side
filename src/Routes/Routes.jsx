@@ -7,6 +7,9 @@ import Login from "../pages/Login/Login";
 import Gallery from "../pages/Gallery/Gallery";
 import Classes from "../pages/Classes/Classes";
 import Trainer from "../pages/Trainer/Trainer";
+import Dashboard from "../Dashboard/Dashboard";
+import Community from "../pages/Community/Community";
+import Subscriber from "../Dashboard/Subscriber";
 
 
 const router = createBrowserRouter([
@@ -38,8 +41,22 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+            {
+                path: "/community",
+                element: <Community></Community>
             }
         ],
+    },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: "subscriber",
+                element: <Subscriber></Subscriber>
+            }
+        ]
     },
 ]);
 

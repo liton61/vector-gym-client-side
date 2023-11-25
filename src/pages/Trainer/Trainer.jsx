@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TrainerCard from "./TrainerCard/TrainerCard";
+import TrainerCard from "./TrainerCard";
 
 
 const Trainer = () => {

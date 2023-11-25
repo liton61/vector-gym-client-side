@@ -19,11 +19,12 @@ const TrainerCard = ({ trainer }) => {
                     {experience}
                 </p>
                 <div>
-            <i className="fa-brands fa-facebook mx-2 text-blue-600"></i>
-            <i className="fa-brands fa-instagram mx-2 text-red-500"></i>
-            <i className="fa-brands fa-twitter mx-2 text-blue-600"></i>
-            <i className="fa-brands fa-linkedin mx-2 text-blue-600"></i>
-            </div>
+                    <i className="fa-brands fa-facebook mx-2 text-blue-600 hover:cursor-pointer"></i>
+                    <i className="fa-brands fa-instagram mx-2 text-red-500 hover:cursor-pointer"></i>
+                    <i className="fa-brands fa-twitter mx-2 text-blue-600 hover:cursor-pointer"></i>
+                    <i className="fa-brands fa-linkedin mx-2 text-blue-600 hover:cursor-pointer"></i>
+                </div>
+                <button className="btn btn-secondary mt-5">Know More</button>
             </div>
         </div>
     );
