@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Fitness World",
+        "day": "Monday",
+        "timeSlot": "6:00 AM - 8:00 AM",
+        "image": "https://i.postimg.cc/4N5z3WMC/01.jpg",
+        "_id": 1
+    },
+    {
+        "name": "Iron Gym",
+        "day": "Tuesday",
+        "timeSlot": "7:00 AM - 9:00 AM",
+        "image": "https://i.postimg.cc/1RDGkmr3/02.jpg",
+        "_id": 2
+    },
+    {
+        "name": "Powerhouse",
+        "day": "Wednesday",
+        "timeSlot": "5:30 AM - 7:30 AM",
+        "image": "https://i.postimg.cc/9FVdV6Lt/03.webp",
+        "_id": 3
+    },
+    {
+        "name": "Fit Factory",
+        "day": "Thursday",
+        "timeSlot": "6:30 AM - 8:30 AM",
+        "image": "https://i.postimg.cc/856RPN8w/04.jpg",
+        "_id": 4
+    },
+    {
+        "name": "Flex Gym",
+        "day": "Friday",
+        "timeSlot": "8:00 AM - 10:00 AM",
+        "image": "https://i.postimg.cc/T1vrKFfx/05.jpg",
+        "_id": 5
+    },
+    {
+        "name": "Body Sculpt",
+        "day": "Saturday",
+        "timeSlot": "9:00 AM - 11:00 AM",
+        "image": "https://i.postimg.cc/ZnP6pH5d/06.jpg",
+        "_id": 6
+    }
+]

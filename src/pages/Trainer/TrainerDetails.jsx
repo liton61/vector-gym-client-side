@@ -6,7 +6,7 @@ import { Link, useParams } from "react-router-dom";
 const TrainerDetails = () => {
     const { id } = useParams();
     const [trainerData, setTrainerData] = useState(null);
-    console.log(trainerData);
+    // console.log(trainerData);
 
     useEffect(() => {
         fetch('http://localhost:5000/trainerApplication')

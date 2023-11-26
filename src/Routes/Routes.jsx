@@ -8,7 +8,6 @@ import Gallery from "../pages/Gallery/Gallery";
 import Classes from "../pages/Classes/Classes";
 import Trainer from "../pages/Trainer/Trainer";
 import Dashboard from "../Dashboard/Dashboard";
-import Community from "../pages/Community/Community";
 import Subscriber from "../Dashboard/Subscriber";
 import TrainerDetails from "../pages/Trainer/TrainerDetails";
 import TrainerForm from "../pages/Trainer/TrainerForm";
@@ -16,6 +15,8 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllTrainer from "../Dashboard/AllTrainer";
 import AppliedTrainer from "../Dashboard/AppliedTrainer";
 import FullBlogs from "../components/Blogs/FullBlogs";
+import ClassDetails from "../pages/Classes/ClassDetails";
+import Forum from "../pages/Forum/Forum";
 
 
 const router = createBrowserRouter([
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
                 element: <Classes></Classes>
             },
             {
+                path: "/classes/:id",
+                element: <ClassDetails></ClassDetails>
+            },
+            {
                 path: "/register",
                 element: <Register></Register>,
             },
@@ -57,8 +62,8 @@ const router = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: "/community",
-                element: <Community></Community>
+                path: "/forum",
+                element: <Forum></Forum>
             },
             {
                 path:"/fullBlogs",

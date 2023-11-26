@@ -36,9 +36,9 @@ const Navbar = () => {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/community"
+                                to="/forum"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""}>Community</NavLink></li>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Forum</NavLink></li>
                         </ul>
                     </div>
                     <div>
@@ -68,9 +68,9 @@ const Navbar = () => {
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/community"
+                            to="/forum"
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""}>Community</NavLink></li>
+                                isPending ? "pending" : isActive ? "active" : ""}>Forum</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

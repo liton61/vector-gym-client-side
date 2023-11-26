@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react";
+import ClassCard from "./ClassCard";
 
 
 const Classes = () => {
+    const [classes, setClasses] = useState([]);
+    // console.log(classes);
+    useEffect(() => {
+        fetch('allClasses.json')
+            .then(res => res.json())
+            .then(data => setClasses(data))
+    }, [])
     return (
         <div>
             <h2 className="text-4xl text-center font-semibold border-b-4 border-blue-600 w-80 mx-auto p-2 mb-10 mt-5">Weekly Schedule</h2>
@@ -46,6 +55,12 @@ const Classes = () => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <h2 className="text-4xl text-center font-semibold border-b-4 border-pink-500 w-80 mx-auto p-2 mb-10 mt-20">All Classes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 lg:w-3/4 mx-auto">
+                {
+                    classes?.map(cls => <ClassCard key={cls._id} cls={cls}></ClassCard>)
+                }
             </div>
         </div>
     );

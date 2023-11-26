@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Cardio Crush",
+        "content": "Get your heart racing and your body moving with invigorating cardio workouts! From high-intensity interval training to dance-based exercises, discover a variety of ways to boost endurance and torch those calories.",
+        "upvotes": 10,
+        "downvotes": 5
+    },
+    {
+        "id": 2,
+        "title": "Strength Sculptt",
+        "content": "TBuild a powerhouse physique with strength training routines designed to target every muscle group. Lift weights, work with resistance bands, or use your body weight—unlock your strength potential and achieve that toned look you've been aiming for!",
+        "upvotes": 15,
+        "downvotes": 3
+    },
+    {
+        "id": 3,
+        "title": "Mindful Movement",
+        "content": "Explore the harmony between body and mind through practices like yoga, Pilates, and tai chi. Enhance flexibility, improve posture, and find your inner calm as you flow through these mindful movements.",
+        "upvotes": 8,
+        "downvotes": 2
+    },
+    {
+        "id": 4,
+        "title": "Functional Fitness",
+        "content": "Elevate your everyday life by focusing on functional exercises that mimic real-life movements. Whether it's lifting groceries or playing sports, these workouts enhance your strength and agility for practical, day-to-day activities..",
+        "upvotes": 20,
+        "downvotes": 7
+    },
+    {
+        "id": 5,
+        "title": "Outdoor Adventures",
+        "content": "Take your fitness journey outside! Embrace the great outdoors with activities like hiking, cycling, or even outdoor boot camps. Breathe in the fresh air while you work up a sweat and enjoy nature's gym.",
+        "upvotes": 12,
+        "downvotes": 4
+    },
+    {
+        "id": 6,
+        "title": "Recovery & Relaxation",
+        "content": "Prioritize recovery as a crucial part of your fitness routine. Explore techniques such as foam rolling, stretching, or meditation to rejuvenate your body, reduce stress, and ensure you're ready for the next challenge.",
+        "upvotes": 18,
+        "downvotes": 6
+    }
+]
