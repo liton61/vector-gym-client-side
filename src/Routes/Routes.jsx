@@ -10,6 +10,8 @@ import Trainer from "../pages/Trainer/Trainer";
 import Dashboard from "../Dashboard/Dashboard";
 import Community from "../pages/Community/Community";
 import Subscriber from "../Dashboard/Subscriber";
+import TrainerDetails from "../pages/Trainer/TrainerDetails";
+import TrainerForm from "../pages/Trainer/TrainerForm";
 
 
 const router = createBrowserRouter([
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
                 element: <Trainer></Trainer>
             },
             {
+                path: "/trainer/:id",
+                element: <TrainerDetails></TrainerDetails>
+            },
+            {
+                path: "/trainerForm",
+                element: <TrainerForm></TrainerForm>
+            },
+            {
                 path: "/classes",
                 element: <Classes></Classes>
             },
@@ -45,7 +55,8 @@ const router = createBrowserRouter([
             {
                 path: "/community",
                 element: <Community></Community>
-            }
+            },
+
         ],
     },
     {

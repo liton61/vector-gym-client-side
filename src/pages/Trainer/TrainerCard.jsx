@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const TrainerCard = ({ trainer }) => {
     const { name, image, experience, slot } = trainer;
@@ -24,7 +26,9 @@ const TrainerCard = ({ trainer }) => {
                     <i className="fa-brands fa-twitter mx-2 text-blue-600 hover:cursor-pointer"></i>
                     <i className="fa-brands fa-linkedin mx-2 text-blue-600 hover:cursor-pointer"></i>
                 </div>
-                <button className="btn btn-secondary mt-5">Know More</button>
+                <Link to={`/trainer/${trainer._id}`}>
+                    <button className="btn btn-secondary mt-5">Know More</button>
+                </Link>
             </div>
         </div>
     );
