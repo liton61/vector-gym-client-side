@@ -12,6 +12,10 @@ import Community from "../pages/Community/Community";
 import Subscriber from "../Dashboard/Subscriber";
 import TrainerDetails from "../pages/Trainer/TrainerDetails";
 import TrainerForm from "../pages/Trainer/TrainerForm";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import AllTrainer from "../Dashboard/AllTrainer";
+import AppliedTrainer from "../Dashboard/AppliedTrainer";
+import FullBlogs from "../components/Blogs/FullBlogs";
 
 
 const router = createBrowserRouter([
@@ -38,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/trainerForm",
-                element: <TrainerForm></TrainerForm>
+                element: <PrivateRoute><TrainerForm></TrainerForm></PrivateRoute>
             },
             {
                 path: "/classes",
@@ -56,6 +60,10 @@ const router = createBrowserRouter([
                 path: "/community",
                 element: <Community></Community>
             },
+            {
+                path:"/fullBlogs",
+                element:<FullBlogs></FullBlogs>
+            }
 
         ],
     },
@@ -66,6 +74,14 @@ const router = createBrowserRouter([
             {
                 path: "subscriber",
                 element: <Subscriber></Subscriber>
+            },
+            {
+                path: "allTrainer",
+                element: <AllTrainer></AllTrainer>
+            },
+            {
+                path: "appliedTrainer",
+                element: <AppliedTrainer></AppliedTrainer>
             }
         ]
     },
