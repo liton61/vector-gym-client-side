@@ -18,7 +18,7 @@ const TrainerForm = () => {
         const timeDay = form.timeDay.value;
         const timeWeek = form.timeWeek.value;
         const timeHour = form.timeHour.value;
-        const role = "member"
+        const role = "trainer"
         const skills = {
             skill1: { checked: form.skill1.checked, value: form.skill1.checked ? form.skill1.value : '' },
             skill2: { checked: form.skill2.checked, value: form.skill2.checked ? form.skill2.value : '' },

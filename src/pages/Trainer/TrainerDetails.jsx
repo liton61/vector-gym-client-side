@@ -6,9 +6,10 @@ import { Link, useParams } from "react-router-dom";
 const TrainerDetails = () => {
     const { id } = useParams();
     const [trainerData, setTrainerData] = useState(null);
+    console.log(trainerData);
 
     useEffect(() => {
-        fetch('/trainerInfo.json')
+        fetch('http://localhost:5000/trainerApplication')
             .then(res => res.json())
             .then(data => {
                 const foundTrainer = data.find(trainer => trainer._id == id);
@@ -21,7 +22,7 @@ const TrainerDetails = () => {
                 <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
                         <img
-                            src={trainerData?.image}
+                            src={trainerData?.photo}
                             alt="image"
                             className="object-cover w-full h-full"
                         />
@@ -30,9 +31,7 @@ const TrainerDetails = () => {
                         <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                             {trainerData?.name}
                         </h4>
-                        <h6 className="block font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-pink-500 uppercase">
-                            {trainerData?.slot}
-                        </h6>
+                        <button className="bg-green-500 text-white px-2 rounded">Available Time Slot</button>
                         <h6 className="block mb-2 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-blue-600 uppercase">
                             {trainerData?.experience}
                         </h6>
