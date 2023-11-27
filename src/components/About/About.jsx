@@ -12,7 +12,7 @@ const About = () => {
                         <img src={about} alt="Gym" className="w-full rounded-lg shadow-md mb-6 md:mb-0" />
                     </div>
                     <div className="md:w-1/2 md:pl-10">
-                        <h2 className="text-4xl font-semibold mb-4">Welcome to Vector Gym</h2>
+                    <h1 className="text-4xl text-center font-semibold border-b-4 border-yellow-500 w-60 mx-auto pb-3 m-10">About Us</h1>
                         <p className="text-gray-700 mb-6 text-justify">
                             Founded in 2009, Vector Gym is dedicated to providing a holistic fitness experience for individuals of all levels.
                             We are committed to helping you achieve your fitness goals and fostering a healthier lifestyle.

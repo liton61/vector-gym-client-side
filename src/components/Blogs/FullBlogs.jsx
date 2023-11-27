@@ -4,7 +4,7 @@
 const FullBlogs = () => {
     return (
         <div>
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3 mb-10 transition-transform transform hover:scale-105">
+            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3 mb-10">
                 <div className="md:flex">
                     <div className="p-8">
                         <h2 className="text-xl font-semibold mt-2">The A Journey to a Healthier You</h2>

@@ -56,7 +56,7 @@ const Classes = () => {
                     </tbody>
                 </table>
             </div>
-            <h2 className="text-4xl text-center font-semibold border-b-4 border-pink-500 w-80 mx-auto p-2 mb-10 mt-20">All Classes</h2>
+            <h2 className="text-4xl text-center font-semibold border-b-4 border-blue-600 w-80 mx-auto p-2 mb-10 mt-20">All Classes</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 lg:w-3/4 mx-auto">
                 {
                     classes?.map(cls => <ClassCard key={cls._id} cls={cls}></ClassCard>)

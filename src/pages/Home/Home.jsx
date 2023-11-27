@@ -16,9 +16,9 @@ const Home = () => {
             <About></About>
             <FeaturedClasses></FeaturedClasses>
             <Testimonials></Testimonials>
+            <Blogs></Blogs>
             <SubscribeForm></SubscribeForm>
             <Team></Team>
-            <Blogs></Blogs>
         </div>
     );
 };

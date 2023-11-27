@@ -11,7 +11,7 @@ const Gallery = () => {
     const [loading, setLoading] = useState(false);
 
     const containerStyle = {
-        backgroundImage: 'url("https://i.ibb.co/KVX5zNn/ezgif-com-webp-to-png.png")',
+        backgroundImage: 'url("https://i.postimg.cc/2SMhC6Yk/Gym-background.jpg")',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -53,7 +53,7 @@ const Gallery = () => {
             <div className="relative h-screen flex items-center justify-center" style={containerStyle}>
                 <div className="absolute inset-0 bg-black opacity-25 rounded-xl"></div>
                 <div className="relative z-10 text-white text-center">
-                    <h1 className="text-4xl font-bold uppercase text-center">Fitness Center || Gallery</h1>
+                    <h1 className="text-4xl font-bold uppercase text-center">Vector Gym || Gallery</h1>
                 </div>
             </div>
             <InfiniteScroll
@@ -61,7 +61,7 @@ const Gallery = () => {
                 next={fetchData}
                 hasMore={gallery.length < totalData}
                 loader={<span className="loading loading-spinner loading-lg"></span>}
-                endMessage={<p className="text-center text-2xl text-pink-500 font-bold mt-5"><b>You have loaded all data</b></p>}
+                endMessage={<p className="text-center text-2xl text-pink-500 font-bold my-5"><b>You have loaded all data</b></p>}
             >
                 <div className="grid grid-cols-4 gap-5 mt-8">
                     {gallery.map((galleries, index) => (
