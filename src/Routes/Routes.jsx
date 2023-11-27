@@ -66,8 +66,8 @@ const router = createBrowserRouter([
                 element: <Forum></Forum>
             },
             {
-                path:"/fullBlogs",
-                element:<FullBlogs></FullBlogs>
+                path: "/fullBlogs",
+                element: <FullBlogs></FullBlogs>
             }
 
         ],
