@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 
 const TrainerCard = ({ trainer }) => {
-    const { name, experience,photo } = trainer;
+    const { name, experience, image } = trainer;
     return (
         <div className="relative flex flex-col text-gray-700 bg-white shadow-md lg:w-96 md:w-80 rounded-xl bg-clip-border mx-auto mb-7">
             <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg h-80 rounded-xl bg-clip-border">
-                <img src={photo} alt="profile-picture" />
+                <img src={image} alt="profile-picture" />
             </div>
             <div className="p-6 text-center">
                 <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">

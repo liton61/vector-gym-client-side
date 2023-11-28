@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import ForumCard from './ForumCard';
+import { Helmet } from 'react-helmet';
 
 const Forum = () => {
   const [forumPosts, setForumPosts] = useState([]);
 
   useEffect(() => {
-    fetch('/forum.json') // Replace with the correct path to your JSON file
+    fetch('/forum.json')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -27,6 +28,9 @@ const Forum = () => {
         <hr className="border-t-4 border-pink-600 mt-2" />
       </div>
       {forumPosts.map((post) => (<ForumCard key={post.id} post={post}></ForumCard>))}
+      <Helmet>
+        <title>Vector Gym | Forum</title>
+      </Helmet>
     </div>
   );
 };

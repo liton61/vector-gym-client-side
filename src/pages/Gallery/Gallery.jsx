@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const LIMIT = 5;
@@ -74,6 +75,9 @@ const Gallery = () => {
                     ))}
                 </div>
             </InfiniteScroll>
+            <Helmet>
+                <title>Vector Gym | Gallery</title>
+            </Helmet>
         </div>
     );
 };

@@ -5,6 +5,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import google from '../../assets/google.jpg'
+import { Helmet } from "react-helmet";
 
 
 const Login = () => {
@@ -92,6 +93,9 @@ const Login = () => {
                     <p className="text-gray-600 text-sm text-center">Don't have an account? <Link to="/register" className="text-[#f72585]">Register</Link></p>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | Login</title>
+            </Helmet>
         </div>
     );
 };

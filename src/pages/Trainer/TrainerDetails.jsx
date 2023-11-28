@@ -9,7 +9,7 @@ const TrainerDetails = () => {
     // console.log(trainerData);
 
     useEffect(() => {
-        fetch('http://localhost:5000/trainerApplication')
+        fetch('http://localhost:5000/trainerInfo')
             .then(res => res.json())
             .then(data => {
                 const foundTrainer = data.find(trainer => trainer._id == id);
@@ -18,11 +18,11 @@ const TrainerDetails = () => {
     }, [id])
     return (
         <div>
-            <div className="flex justify-center items-center h-[70vh]">
-                <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                    <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
+            <div className="flex justify-center items-center mt-10">
+                <div className="relative lg:flex md:flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border sm:mx-auto">
                         <img
-                            src={trainerData?.photo}
+                            src={trainerData?.image}
                             alt="image"
                             className="object-cover w-full h-full"
                         />
@@ -49,7 +49,7 @@ const TrainerDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center my-14">
                 <Link to="/trainerForm">
                     <button
                         className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-pink-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"

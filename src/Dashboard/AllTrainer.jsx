@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const AllTrainer = () => {
     const [trainers, setTrainers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/trainerApplication')
+        fetch('http://localhost:5000/trainerInfo')
             .then(res => res.json())
             .then(data => setTrainers(data))
     }, [])
@@ -30,12 +30,12 @@ const AllTrainer = () => {
                                     <div className="flex items-center gap-3">
                                         <div className="avatar">
                                             <div className="mask mask-squircle w-12 h-12">
-                                                <img src={trainer.photo} alt="Avatar Tailwind CSS Component" />
+                                                <img src={trainer.image} alt="Avatar Tailwind CSS Component" />
                                             </div>
                                         </div>
-                                        </div>
-                                        <td>{trainer.name}</td>
-                                        <td>Blue</td>
+                                    </div>
+                                    <td>{trainer.name}</td>
+                                    <td>Blue</td>
                                 </tr>)
                             }
                         </tbody>

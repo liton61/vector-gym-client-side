@@ -14,11 +14,12 @@ const TrainerForm = () => {
         const email = form.email.value;
         const name = form.name.value;
         const age = form.age.value;
-        const photo = form.photo.value;
+        const image = form.image.value;
         const timeDay = form.timeDay.value;
         const timeWeek = form.timeWeek.value;
-        const timeHour = form.timeHour.value;
-        const role = "trainer"
+        const salary = form.salary.value;
+        const role = "member";
+        const status = "pending";
         const skills = {
             skill1: { checked: form.skill1.checked, value: form.skill1.checked ? form.skill1.value : '' },
             skill2: { checked: form.skill2.checked, value: form.skill2.checked ? form.skill2.value : '' },
@@ -33,7 +34,7 @@ const TrainerForm = () => {
             }
         }
 
-        const trainerDoc = { email, age, timeDay, name, photo, timeWeek, timeHour, role, skills: checkedSkills }
+        const trainerDoc = { email, age, timeDay, name, image, timeWeek, salary, role, status, skills: checkedSkills }
         console.log(trainerDoc);
 
         // send data to the server
@@ -41,9 +42,9 @@ const TrainerForm = () => {
             .then(res => {
                 if (res.data.insertedId) {
                     Swal.fire({
-                        position: "top-end",
+                        position: "top",
                         icon: "success",
-                        title: "Applied Successfully",
+                        title: "You have successfully applied !",
                         showConfirmButton: false,
                         timer: 1500
                     });
@@ -57,8 +58,8 @@ const TrainerForm = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleApplied} className="lg:w-3/4 mx-auto mt-10">
+        <div className="p-14 bg-gray-100">
+            <form onSubmit={handleApplied} className="lg:w-3/4 mx-auto bg-white p-10 rounded-lg">
                 <div className='md:flex gap-6 justify-center mb-4'>
 
                     <div className="form-control md:w-1/2 px-5">
@@ -89,10 +90,10 @@ const TrainerForm = () => {
                     </div>
                     <div className="form-control md:w-1/2 px-5">
                         <label className="label">
-                            <span className='label-text font-bold'>Photo URL</span>
+                            <span className='label-text font-bold'>Image URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name='photo' placeholder="Enter Image URL" className="input input-bordered focus:outline-none w-full" />
+                            <input type="text" name='image' placeholder="Enter image URL" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
                 </div>
@@ -102,25 +103,25 @@ const TrainerForm = () => {
                             <span className='label-text font-bold'>Select your skills</span>
                         </label>
                         <label className="input-group">
-                            <div className="flex gap-2">
+                            <div className="gap-2">
                                 <div className="flex gap-2" >
                                     <input type="checkbox"
-                                        name="skill1" id="skill1" value={'yoga'} />
+                                        name="skill1" id="skill1" value={'Yoga'} />
                                     <label htmlFor="skill1"><a href="#">Yoga</a></label>
                                 </div>
                                 <div className="flex gap-2" >
                                     <input type="checkbox"
-                                        name="skill2" id="skill2" value={'body_building'} />
+                                        name="skill2" id="skill2" value={'Body building'} />
                                     <label htmlFor="skill2"><a href="#">Body Building</a></label>
                                 </div>
                                 <div className="flex gap-2" >
                                     <input type="checkbox"
-                                        name="skill3" id="skill3" value={'muscle_gain'} />
+                                        name="skill3" id="skill3" value={'Muscle gain'} />
                                     <label htmlFor="skill3"><a href="#">Muscle Gain</a></label>
                                 </div>
                                 <div className="flex gap-2" >
                                     <input type="checkbox"
-                                        name="skill4" id="skill4" value={'weight_loss'} />
+                                        name="skill4" id="skill4" value={'Weight loss'} />
                                     <label htmlFor="skill4"><a href="#">Weight Loss</a></label>
                                 </div>
                             </div>
@@ -148,17 +149,17 @@ const TrainerForm = () => {
                     </div>
                     <div className="form-control md:w-1/2 px-5">
                         <label className="label">
-                            <span className='label-text font-bold'>How many hours in a day
+                            <span className='label-text font-bold'>Salary
                             </span>
                         </label>
                         <label className="input-group">
-                            <input type="number" name='timeHour' placeholder="Enter available time hours" className="input input-bordered focus:outline-none w-full" />
+                            <input type="text" name='salary' placeholder="Your Role" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
                 </div>
 
-                <div className="px-4">
-                    <input className='btn btn-block bg-pink-500' type="submit" value="Apply" />
+                <div className="px-5">
+                    <button type="submit" className="w-full bg-[#ffd166] py-2 px-4 rounded-lg focus:outline-none font-medium">Apply</button>
                 </div>
             </form>
         </div>

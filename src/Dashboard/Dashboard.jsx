@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { NavLink, Outlet } from "react-router-dom";
 
 
@@ -18,6 +19,9 @@ const Dashboard = () => {
             <div className="flex-1">
                 <Outlet></Outlet>
             </div>
+            <Helmet>
+                <title>Vector Gym | Dashboard</title>
+            </Helmet>
         </div>
     );
 };

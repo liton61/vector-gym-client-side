@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import ClassCard from "./ClassCard";
+import { Helmet } from "react-helmet";
 
 
 const Classes = () => {
     const [classes, setClasses] = useState([]);
-    // console.log(classes);
     useEffect(() => {
         fetch('allClasses.json')
             .then(res => res.json())
@@ -62,6 +62,9 @@ const Classes = () => {
                     classes?.map(cls => <ClassCard key={cls._id} cls={cls}></ClassCard>)
                 }
             </div>
+            <Helmet>
+                <title>Vector Gym | Classes</title>
+            </Helmet>
         </div>
     );
 };

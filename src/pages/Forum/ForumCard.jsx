@@ -1,22 +1,24 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import useAuth from '../../hooks/useAuth';
 
 const ForumCard = ({ post }) => {
+    const { user } = useAuth();
     const { id, title, content } = post;
     const [upvotes, setUpvotes] = useState(post.upvotes);
     const [downvotes, setDownvotes] = useState(post.downvotes);
     const [voted, setVoted] = useState(false);
 
     const handleUpvote = () => {
-        if (!voted) {
+        if (user && !voted) {
             setUpvotes(upvotes + 1);
             setVoted(true);
         }
     };
 
     const handleDownvote = () => {
-        if (!voted) {
+        if (user && !voted) {
             setDownvotes(downvotes + 1);
             setVoted(true);
         }

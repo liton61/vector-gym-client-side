@@ -26,13 +26,13 @@ const ClassDetails = () => {
                         <div className="badge badge-secondary mx-3">Fee : {classes?.price}</div>
                     </h2>
                     <div>
-                    <div className="badge badge-secondary mx-3">Day : {classes?.day}</div>
+                        <div className="badge badge-secondary mx-3">Day : {classes?.day}</div>
                         <div className="badge badge-secondary mx-3">Time : {classes?.timeSlot}</div>
                     </div>
                     <p className="text-justify">{classes?.description}</p>
                     <div className="card-actions">
                         <Link className="w-full mt-5" to="/trainer">
-                        <button className="btn btn-success w-full">Join Now</button>
+                            <button className="btn btn-success w-full">Join Now</button>
                         </Link>
                     </div>
                 </div>

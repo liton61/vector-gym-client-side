@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
     const { createUser, profile } = useContext(AuthContext);
@@ -93,6 +94,9 @@ const Register = () => {
                     <p className="text-gray-600 text-sm text-center">Already have an account? <a href="/login" className="text-[#f72585]">Login</a></p>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | Register</title>
+            </Helmet>
         </div>
     );
 };

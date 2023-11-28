@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Slider from "../../Header/Slider";
 import About from "../../components/About/About";
 import Blogs from "../../components/Blogs/Blogs";
@@ -11,6 +12,9 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Vector Gym | Home</title>
+            </Helmet>
             <Slider></Slider>
             <Features></Features>
             <About></About>
