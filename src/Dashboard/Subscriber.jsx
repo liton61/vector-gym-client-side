@@ -20,16 +20,14 @@ const Subscriber = () => {
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {
-                                subscribers.map((subscriber,index) => <tr key={subscriber._id}>
+                                subscribers.map((subscriber, index) => <tr key={subscriber._id}>
                                     <th>{index + 1}</th>
                                     <td>{subscriber.name}</td>
                                     <td>{subscriber.email}</td>
-                                    <td>Blue</td>
                                 </tr>)
                             }
                         </tbody>

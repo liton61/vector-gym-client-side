@@ -4,11 +4,23 @@ const AppliedTrainer = () => {
     const [trainers, setTrainers] = useState([]);
     const [selectedTrainer, setSelectedTrainer] = useState(null);
 
-    useEffect(() => {
+    const fetchTrainers = () => {
         fetch('http://localhost:5000/trainerApplication')
             .then(res => res.json())
-            .then(data => setTrainers(data))
+            .then(data => {
+                setTrainers(data);
+                localStorage.setItem('appliedTrainers', JSON.stringify(data));
+            })
             .catch(error => console.error('Error fetching data:', error));
+    };
+
+    useEffect(() => {
+        const storedTrainers = localStorage.getItem('appliedTrainers');
+        if (storedTrainers) {
+            setTrainers(JSON.parse(storedTrainers));
+        } else {
+            fetchTrainers();
+        }
     }, []);
 
     const openModal = (trainer) => {
@@ -19,11 +31,41 @@ const AppliedTrainer = () => {
         setSelectedTrainer(null);
     };
 
+    const handleConfirm = (e, id) => {
+        e.preventDefault();
+
+        const d = { role: 'trainer' };
+        fetch(`http://localhost:5000/trainerApplication/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(d)
+        })
+            .then(res => res.json())
+            .then(success => {
+                if (success) {
+                    // Close the modal
+                    closeModal();
+
+                    // Filter out the confirmed trainer from the UI
+                    const updatedTrainers = trainers.filter(trainer => trainer._id !== id);
+                    setTrainers(updatedTrainers);
+                    localStorage.setItem('appliedTrainers', JSON.stringify(updatedTrainers));
+                }
+            })
+            .catch(error => {
+                console.error('Error confirming trainer:', error);
+                // Handle error state or display an error message to the user
+            });
+    };
+
     return (
         <div>
             <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">Applied Trainers</h2>
             <div className="overflow-x-auto lg:w-3/4 mx-auto">
                 <table className="table table-zebra">
+                    {/* Table headers */}
                     <thead>
                         <tr>
                             <th>#</th>
@@ -34,6 +76,7 @@ const AppliedTrainer = () => {
                         </tr>
                     </thead>
                     <tbody>
+                        {/* Render trainers */}
                         {trainers.map((trainer, index) => (
                             <tr key={trainer._id}>
                                 <th>{index + 1}</th>
@@ -45,7 +88,7 @@ const AppliedTrainer = () => {
                                     </div>
                                 </td>
                                 <td>{trainer.name}</td>
-                                <td>Member</td>
+                                <td>{trainer.role}</td>
                                 <td>
                                     <button className="btn" onClick={() => openModal(trainer)}>
                                         <i className="fa-solid fa-eye"></i>
@@ -57,20 +100,16 @@ const AppliedTrainer = () => {
                 </table>
             </div>
 
+            {/* Modal for trainer details */}
             {selectedTrainer && (
                 <dialog className="modal modal-bottom sm:modal-middle" open>
                     <div className="modal-box">
                         <h3 className="font-bold text-lg">{selectedTrainer.name} Details</h3>
-                        <p>{selectedTrainer.
-                            salary}</p>
-                        <p>{selectedTrainer.
-
-                            age}</p>
-                        <p>{selectedTrainer.
-
-                            timeDay}</p>
+                        <p>{selectedTrainer.salary}</p>
+                        <p>{selectedTrainer.age}</p>
+                        <p>{selectedTrainer.timeDay}</p>
                         <div className="modal-action">
-                            <button className="btn btn-success text-white">Confirm</button>
+                            <button onClick={(e) => handleConfirm(e, selectedTrainer._id)} className="btn btn-success text-white">Confirm</button>
                             <button className="btn btn-error text-white">Reject</button>
                             <button className="btn btn-warning text-white" onClick={closeModal}>Close</button>
                         </div>

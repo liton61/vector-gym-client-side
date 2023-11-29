@@ -2,12 +2,14 @@ import { Helmet } from "react-helmet";
 import { NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
 import useTrainer from "../hooks/useTrainer";
-import useMember from "../hooks/useMember";
+// import useMember from "../hooks/useMember";
 
 const Dashboard = () => {
     const [isAdmin] = useAdmin();
     const [isTrainer] = useTrainer();
-    const [isMember] = useMember();
+    console.log(isTrainer);
+    // const [isMember] = useMember();
+    const isMember = !isAdmin && !isTrainer;
     return (
         <div className="flex">
             <div className="w-64 bg-[#ffd166] h-screen">
@@ -19,7 +21,7 @@ const Dashboard = () => {
                             <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fas fa-chalkboard-teacher"></i> All Trainers</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Applied Trainer</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/balance"> <i className="fa-solid fa-dollar-sign"></i> Balance</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/allUsers"> <i className="fa-solid fa-dollar-sign"></i> All Users</NavLink></li>
+                            {/* <li className="font-medium mb-3"><NavLink to="/dashboard/allUsers"> <i className="fa-solid fa-users"></i> All Users</NavLink></li> */}
                         </>
                     ) : isTrainer ? (
                         <>
