@@ -3,8 +3,10 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Register = () => {
+    const axiosPublic = useAxiosPublic();
     const { createUser, profile } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -51,15 +53,24 @@ const Register = () => {
                 console.log(res);
                 profile(name, photo)
                     .then(() => {
-                        Swal.fire({
-                            position: 'top',
-                            icon: 'success',
-                            title: 'You have successfully registered !',
-                            showConfirmButton: false,
-                            timer: 2000
-                        });
-                        navigate(location?.state ? location.state : '/')
-                            .catch(error => console.log(error))
+                        const usersInfo = {
+                            name: name,
+                            email: email
+                        }
+                        axiosPublic.post('/users', usersInfo)
+                            .then(res => {
+                                if (res.data.insertedId) {
+                                    Swal.fire({
+                                        position: 'top',
+                                        icon: 'success',
+                                        title: 'You have successfully registered !',
+                                        showConfirmButton: false,
+                                        timer: 2000
+                                    });
+                                    navigate(location?.state ? location.state : '/')
+                                        .catch(error => console.log(error))
+                                }
+                            })
                     })
             })
 

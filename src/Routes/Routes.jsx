@@ -17,6 +17,8 @@ import AppliedTrainer from "../Dashboard/AppliedTrainer";
 import FullBlogs from "../components/Blogs/FullBlogs";
 import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Forum/Forum";
+import Booked from "../pages/Booked/Booked";
+import AllUsers from "../Dashboard/Allusers";
 
 
 const router = createBrowserRouter([
@@ -68,6 +70,10 @@ const router = createBrowserRouter([
             {
                 path: "/fullBlogs",
                 element: <FullBlogs></FullBlogs>
+            },
+            {
+                path: "/booked",
+                element: <Booked></Booked>
             }
 
         ],
@@ -87,6 +93,10 @@ const router = createBrowserRouter([
             {
                 path: "appliedTrainer",
                 element: <AppliedTrainer></AppliedTrainer>
+            },
+            {
+                path: "allUsers",
+                element: <AllUsers></AllUsers>
             }
         ]
     },

@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import InfiniteScroll from "react-infinite-scroll-component";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const LIMIT = 5;
 
@@ -48,6 +50,10 @@ const Gallery = () => {
         fetchData();
 
     }, []);
+    useEffect(() => {
+        AOS.init({ duration: "3000" });
+
+    }, []);
 
     return (
         <div>
@@ -62,12 +68,13 @@ const Gallery = () => {
                 next={fetchData}
                 hasMore={gallery.length < totalData}
                 loader={<span className="loading loading-spinner loading-lg"></span>}
-                endMessage={<p className="text-center text-2xl text-pink-500 font-bold my-5"><b>You have loaded all data</b></p>}
+                endMessage={<p className="text-center text-2xl text-pink-500 font-bold my-5"><span className="loading loading-spinner text-secondary"></span></p>}
             >
                 <div className="grid grid-cols-4 gap-5 mt-8">
                     {gallery.map((galleries, index) => (
                         <div key={galleries._id || index} className="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md">
-                            <img className="h-64 w-96 object-cover" src={galleries.image} alt="Card" />
+                            <img className="h-64 w-96 object-cover" src={galleries.image} alt="Card" data-aos="fade-up"
+                                data-aos-duration="3000" />
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2 text-center">{galleries.title}</div>
                             </div>

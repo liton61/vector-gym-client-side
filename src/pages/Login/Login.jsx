@@ -6,15 +6,25 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import google from '../../assets/google.jpg'
 import { Helmet } from "react-helmet";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 
 const Login = () => {
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
+    const axiosPublic = useAxiosPublic();
 
     const googleLogin = () => {
         signInWithPopup(auth, provider)
             .then((result) => {
+                const usersInfo = {
+                    user: result.user?.email,
+                    name: result.user?.displayName
+                }
+                axiosPublic.post('/users', usersInfo)
+                    .then(res => {
+                        console.log(res.data);
+                    })
                 console.log(result);
                 window.location.href = '/';
             })

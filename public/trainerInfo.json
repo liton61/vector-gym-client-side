@@ -3,18 +3,21 @@
         "name": "Alice Johnson",
         "image": "https://i.postimg.cc/3r68Nsfb/instructor-3.png",
         "experience": "12 Years Experience",
-        "about": "Alice brings 12 years of diverse training experience, specializing in personalized fitness routines tailored to individual needs. Her approach emphasizes holistic wellness, integrating mind and body for overall health."
+        "about": "Alice brings 12 years of diverse training experience, specializing in personalized fitness routines tailored to individual needs. Her approach emphasizes holistic wellness, integrating mind and body for overall health.",
+        "time_slot": "Saturday 10:00 AM - 12:00 PM"
     },
     {
         "name": "Bob Smith",
         "image": "https://i.postimg.cc/jd7s7MGq/instructor-2.png",
         "experience": "8 Years Experience",
-        "about": "With 8 years in the fitness industry, Bob has a passion for high-intensity workouts and functional training. His sessions are dynamic, aiming for optimal results through varied and challenging exercises."
+        "about": "With 8 years in the fitness industry, Bob has a passion for high-intensity workouts and functional training. His sessions are dynamic, aiming for optimal results through varied and challenging exercises.",
+        "time_slot": "Monday 3:00 PM - 5:00 PM"
     },
     {
         "name": "Eva Brown",
         "image": "https://i.postimg.cc/5tn1VTFg/instructor-1.png",
         "experience": "15 Years Experience",
-        "about": "Eva, a seasoned veteran with 15 years in the field, specializes in yoga, meditation, and flexibility training. Her focus is on harmony between body and mind, promoting inner strength and balance."
+        "about": "Eva, a seasoned veteran with 15 years in the field, specializes in yoga, meditation, and flexibility training. Her focus is on harmony between body and mind, promoting inner strength and balance.",
+        "time_slot": "Wednesday 9:00 AM - 11:00 AM"
     }
 ]

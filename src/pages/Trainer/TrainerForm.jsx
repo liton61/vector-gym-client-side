@@ -153,13 +153,13 @@ const TrainerForm = () => {
                             </span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name='salary' placeholder="Your Role" className="input input-bordered focus:outline-none w-full" />
+                            <input type="text" name='salary' placeholder="Salary" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
                 </div>
 
                 <div className="px-5">
-                    <button type="submit" className="w-full bg-[#ffd166] py-2 px-4 rounded-lg focus:outline-none font-medium">Apply</button>
+                    <button type="submit" className="w-full bg-green-600 text-white py-2 px-4 rounded-lg focus:outline-none font-medium">Apply</button>
                 </div>
             </form>
         </div>

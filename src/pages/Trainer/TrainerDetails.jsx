@@ -31,7 +31,9 @@ const TrainerDetails = () => {
                         <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                             {trainerData?.name}
                         </h4>
-                        <button className="bg-green-500 text-white px-2 rounded">Available Time Slot</button>
+                        <Link to="/booked">
+                            <button className="bg-green-600 text-white px-2 rounded">{trainerData?.time_slot}</button>
+                        </Link>
                         <h6 className="block mb-2 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-blue-600 uppercase">
                             {trainerData?.experience}
                         </h6>

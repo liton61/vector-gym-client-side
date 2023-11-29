@@ -20,7 +20,7 @@ const AllTrainer = () => {
                                 <th>#</th>
                                 <th>Image</th>
                                 <th>Name</th>
-                                <th>Action</th>
+                                <th>Salary</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,7 +35,7 @@ const AllTrainer = () => {
                                         </div>
                                     </div>
                                     <td>{trainer.name}</td>
-                                    <td>Blue</td>
+                                    <td><button className="btn btn-success text-white">Pay</button></td>
                                 </tr>)
                             }
                         </tbody>

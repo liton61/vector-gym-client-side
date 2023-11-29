@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const AppliedTrainer = () => {
     const [trainers, setTrainers] = useState([]);
+    const [selectedTrainer, setSelectedTrainer] = useState(null);
 
     useEffect(() => {
         fetch('http://localhost:5000/trainerApplication')
@@ -9,6 +10,14 @@ const AppliedTrainer = () => {
             .then(data => setTrainers(data))
             .catch(error => console.error('Error fetching data:', error));
     }, []);
+
+    const openModal = (trainer) => {
+        setSelectedTrainer(trainer);
+    };
+
+    const closeModal = () => {
+        setSelectedTrainer(null);
+    };
 
     return (
         <div>
@@ -20,7 +29,7 @@ const AppliedTrainer = () => {
                             <th>#</th>
                             <th>Image</th>
                             <th>Name</th>
-                            {/* <th>Skills</th> */}
+                            <th>Role</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -36,27 +45,38 @@ const AppliedTrainer = () => {
                                     </div>
                                 </td>
                                 <td>{trainer.name}</td>
+                                <td>Member</td>
                                 <td>
-                                    {/* <div className="flex flex-wrap">
-                                        {trainer.skills && typeof trainer.skills === 'object' ? (
-                                            Object.keys(trainer.skills).map((key, skillIndex) => (
-                                                <span key={skillIndex} className="bg-gray-200 text-gray-700 text-sm px-2 py-1 rounded-md mr-2 mb-2">
-                                                    {trainer.skills[key]}
-                                                </span>
-                                            ))
-                                        ) : (
-                                            <span>No skills data available</span>
-                                        )}
-                                    </div> */}
-                                </td>
-                                <td>
-                                    <i className="fa-solid fa-eye cursor-pointer"></i>
+                                    <button className="btn" onClick={() => openModal(trainer)}>
+                                        <i className="fa-solid fa-eye"></i>
+                                    </button>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
             </div>
+
+            {selectedTrainer && (
+                <dialog className="modal modal-bottom sm:modal-middle" open>
+                    <div className="modal-box">
+                        <h3 className="font-bold text-lg">{selectedTrainer.name} Details</h3>
+                        <p>{selectedTrainer.
+                            salary}</p>
+                        <p>{selectedTrainer.
+
+                            age}</p>
+                        <p>{selectedTrainer.
+
+                            timeDay}</p>
+                        <div className="modal-action">
+                            <button className="btn btn-success text-white">Confirm</button>
+                            <button className="btn btn-error text-white">Reject</button>
+                            <button className="btn btn-warning text-white" onClick={closeModal}>Close</button>
+                        </div>
+                    </div>
+                </dialog>
+            )}
         </div>
     );
 };

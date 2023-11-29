@@ -32,7 +32,7 @@ const ClassDetails = () => {
                     <p className="text-justify">{classes?.description}</p>
                     <div className="card-actions">
                         <Link className="w-full mt-5" to="/trainer">
-                            <button className="btn btn-success w-full">Join Now</button>
+                            <button className="btn btn-success w-full text-white">Join Now</button>
                         </Link>
                     </div>
                 </div>

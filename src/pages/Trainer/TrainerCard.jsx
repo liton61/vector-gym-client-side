@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const TrainerCard = ({ trainer }) => {
-    const { name, experience, image } = trainer;
+    const { name, experience, image, time_slot } = trainer;
     return (
         <div className="relative flex flex-col text-gray-700 bg-white shadow-md lg:w-96 md:w-80 rounded-xl bg-clip-border mx-auto mb-7">
             <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg h-80 rounded-xl bg-clip-border">
@@ -14,7 +14,7 @@ const TrainerCard = ({ trainer }) => {
                 <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                     {name}
                 </h4>
-                <button className="bg-green-500 text-white px-2 rounded">Available Time Slot</button>
+                <p className="bg-green-600 text-white px-2 rounded">{time_slot}</p>
                 <p className="font-medium text-blue-600">
                     {experience}
                 </p>
