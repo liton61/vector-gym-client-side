@@ -181,7 +181,7 @@ const TrainerForm = () => {
                 </div>
 
                 <div className="px-5">
-                    <button type="submit" className="w-full bg-green-600 text-white py-2 px-4 rounded-lg focus:outline-none font-medium">Apply</button>
+                    <button type="submit" className="btn btn-active btn-secondary w-full">Apply</button>
                 </div>
             </form>
         </div>

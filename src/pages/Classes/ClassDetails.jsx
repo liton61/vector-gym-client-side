@@ -9,7 +9,7 @@ const ClassDetails = () => {
     const [classes, setClasses] = useState(null);
 
     useEffect(() => {
-        fetch('/allClasses.json')
+        fetch('http://localhost:5000/classes')
             .then(res => res.json())
             .then(data => {
                 const classInfo = data.find(info => info._id == id);

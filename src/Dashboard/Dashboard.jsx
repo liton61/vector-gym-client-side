@@ -30,7 +30,7 @@ const Dashboard = () => {
                             <li className="font-medium mb-3"><NavLink to="/dashboard/manageSlots"><i className="fa-solid fa-bars"></i>  Manage Slots</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/manageMember"> <i className="fa-solid fa-user-group"></i>  Manage member</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/addNewForum"><i className="fa-solid fa-recycle"></i> Add new Forum</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink> <i className="fa-solid fa-dumbbell"></i> Add new Class</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/addNewClass"> <i className="fa-solid fa-dumbbell"></i> Add new Class</NavLink></li>
                         </>
                     ) : isMember ? (
                         <>

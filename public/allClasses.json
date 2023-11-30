@@ -4,7 +4,6 @@
         "day": "Wednesday",
         "timeSlot": "6:00 AM - 8:00 AM",
         "image": "https://i.postimg.cc/zvtCBxks/02.jpg",
-        "_id": 1,
         "description": "Embark on a transformative journey merging the art of yoga and the serenity of meditation. Explore the depths of inner peace while enhancing physical flexibility, strength, and mental clarity. Our sessions blend ancient practices to harmonize mind, body, and spirit, nurturing a balanced and rejuvenated self.",
         "price": "$15/session"
     },
@@ -13,7 +12,6 @@
         "day": "Saturday",
         "timeSlot": "7:00 AM - 9:00 AM",
         "image": "https://i.postimg.cc/fLvj4zST/06.webp",
-        "_id": 2,
         "description": "Discover the path to a stronger core and enhanced stability with our Abs Gain sessions. Engage in targeted workouts designed to sculpt and strengthen abdominal muscles, fostering not just a defined midsection but also promoting overall body strength and balance. Join us to unlock your core potential and elevate your fitness journey.",
         "price": "$20/session"
     },
@@ -22,7 +20,6 @@
         "day": "Monday",
         "timeSlot": "5:30 AM - 7:30 AM",
         "image": "https://i.postimg.cc/cJ5BDZC8/08.webp",
-        "_id": 3,
         "description": "Embark on a transformative journey towards a healthier you with our Weight Loss sessions. Designed to support and guide you through your fitness goals, our program combines tailored workouts and expert guidance to help shed excess weight, improve stamina, and cultivate a sustainable, healthier lifestyle. Join us to achieve your weight loss aspirations and embrace a revitalized, more energetic self.",
         "price": "$25/session"
     },
@@ -31,7 +28,6 @@
         "day": "Wednesday",
         "timeSlot": "6:30 AM - 8:30 AM",
         "image": "https://i.postimg.cc/7PmMmLyK/05.jpg",
-        "_id": 4,
         "description": "Experience the exhilaration of our Running Sessions, crafted to enhance your endurance and invigorate your fitness journey. Join us as we explore the joy of running, focusing on technique refinement, stamina building, and overall cardiovascular health. Engage with like-minded individuals in a supportive environment, amplifying your love for running while boosting your physical and mental resilience.",
         "price": "$18/session"
     },
@@ -40,7 +36,6 @@
         "day": "Saturday",
         "timeSlot": "8:00 AM - 10:00 AM",
         "image": "https://i.postimg.cc/wjtVtYZ0/03.jpg",
-        "_id": 5,
         "description": "Unleash your potential and build robust strength with our Muscle Gain sessions. Tailored workouts and targeted exercises await to help you sculpt and strengthen muscles, amplifying power, and resilience. Join our community dedicated to fostering muscle growth and achieving fitness milestones, empowering you to attain your desired physique with determination and expert guidance.",
         "price": "$22/session"
     },
@@ -49,7 +44,6 @@
         "day": "Monday",
         "timeSlot": "9:00 AM - 11:00 AM",
         "image": "https://i.postimg.cc/8C47ZC01/07.jpg",
-        "_id": 6,
         "description": "Step into the realm of dedicated fitness and sculpt your ideal physique with our Body Building sessions. These intense and focused workouts are designed to amplify strength, define muscles, and elevate performance. Engage in structured routines, personalized guidance, and a supportive environment, fostering a journey towards achieving your bodybuilding aspirations with determination and precision.",
         "price": "$30/session"
     }
