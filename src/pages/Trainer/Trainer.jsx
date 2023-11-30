@@ -9,7 +9,7 @@ const Trainer = () => {
     // const [trainer] = useApplication();
     const [trainers, setTrainers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/trainerInfo')
+        fetch('http://localhost:5000/trainerApplication?role=trainer')
             .then(res => res.json())
             .then(data => setTrainers(data))
     }, [])

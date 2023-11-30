@@ -11,7 +11,7 @@ const ClassCard = ({ cls }) => {
                 <figure><img className="lg:h-48 md:h-48 w-full" src={image} alt="" /></figure>
                 <div className="p-5">
                     <Link to={`/classes/${cls._id}`}>
-                        <button className="btn btn-secondary w-full">{name}</button>
+                        <button className="btn btn-active btn-secondary w-full">{name}</button>
                     </Link>
                 </div>
             </div>

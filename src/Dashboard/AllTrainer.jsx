@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const AllTrainer = () => {
     const [trainers, setTrainers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/trainerInfo')
+        fetch('http://localhost:5000/trainerApplication?role=trainer')
             .then(res => res.json())
             .then(data => setTrainers(data))
     }, [])

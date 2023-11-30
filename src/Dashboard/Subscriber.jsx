@@ -16,10 +16,11 @@ const Subscriber = () => {
                     <table className="table table-zebra">
                         {/* head */}
                         <thead>
-                            <tr>
+                            <tr className="bg-yellow-500 text-white font-medium">
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,6 +29,7 @@ const Subscriber = () => {
                                     <th>{index + 1}</th>
                                     <td>{subscriber.name}</td>
                                     <td>{subscriber.email}</td>
+                                    <td><i className="fa-solid fa-trash-can text-lg text-red-600 cursor-pointer"></i></td>
                                 </tr>)
                             }
                         </tbody>

@@ -5,22 +5,24 @@ const AppliedTrainer = () => {
     const [selectedTrainer, setSelectedTrainer] = useState(null);
 
     const fetchTrainers = () => {
-        fetch('http://localhost:5000/trainerApplication')
+        fetch('http://localhost:5000/trainerApplication?role=member')
             .then(res => res.json())
             .then(data => {
                 setTrainers(data);
+                console.log(data);
                 localStorage.setItem('appliedTrainers', JSON.stringify(data));
             })
             .catch(error => console.error('Error fetching data:', error));
     };
 
     useEffect(() => {
-        const storedTrainers = localStorage.getItem('appliedTrainers');
-        if (storedTrainers) {
-            setTrainers(JSON.parse(storedTrainers));
-        } else {
-            fetchTrainers();
-        }
+        // const storedTrainers = localStorage.getItem('appliedTrainers');
+        // if (storedTrainers) {
+        //     setTrainers(JSON.parse(storedTrainers));
+        // } else {
+        //     fetchTrainers();
+        // }
+        fetchTrainers();
     }, []);
 
     const openModal = (trainer) => {
@@ -105,9 +107,25 @@ const AppliedTrainer = () => {
                 <dialog className="modal modal-bottom sm:modal-middle" open>
                     <div className="modal-box">
                         <h3 className="font-bold text-lg">{selectedTrainer.name} Details</h3>
-                        <p>{selectedTrainer.salary}</p>
-                        <p>{selectedTrainer.age}</p>
-                        <p>{selectedTrainer.timeDay}</p>
+                        <p className="font-medium">Age : {selectedTrainer.age}</p>
+                        <p className="font-medium">Age : {selectedTrainer.experience}</p>
+                        <p className="font-medium">Salary : {selectedTrainer.salary}</p>
+                        <p className="font-medium">Day : {selectedTrainer.timeWeek}</p>
+                        <p className="font-medium">Time : {selectedTrainer.timeDay}</p>
+                        <div>
+                            <h6 className="block mb-2 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-blue-600 uppercase">
+                                Skills :
+                            </h6>
+                            <div className="flex flex-wrap gap-2">
+                                {Object.values(selectedTrainer.skills).map((skill, index) => (
+                                    skill && (
+                                        <span key={index} className="bg-gray-200 text-pink-600 text-sm px-2 py-1 rounded-md font-medium">
+                                            {skill}
+                                        </span>
+                                    )
+                                ))}
+                            </div>
+                        </div>
                         <div className="modal-action">
                             <button onClick={(e) => handleConfirm(e, selectedTrainer._id)} className="btn btn-success text-white">Confirm</button>
                             <button className="btn btn-error text-white">Reject</button>

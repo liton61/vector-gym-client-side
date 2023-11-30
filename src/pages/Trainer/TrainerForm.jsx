@@ -18,8 +18,9 @@ const TrainerForm = () => {
         const timeDay = form.timeDay.value;
         const timeWeek = form.timeWeek.value;
         const salary = form.salary.value;
+        const experience = form.experience.value;
+        const description = form.description.value;
         const role = "member";
-        const status = "pending";
         const skills = {
             skill1: { checked: form.skill1.checked, value: form.skill1.checked ? form.skill1.value : '' },
             skill2: { checked: form.skill2.checked, value: form.skill2.checked ? form.skill2.value : '' },
@@ -34,7 +35,7 @@ const TrainerForm = () => {
             }
         }
 
-        const trainerDoc = { email, age, timeDay, name, image, timeWeek, salary, role, status, skills: checkedSkills }
+        const trainerDoc = { email, age, timeDay, name, image, timeWeek, salary, experience, description, role, skills: checkedSkills }
         console.log(trainerDoc);
 
         // send data to the server
@@ -154,6 +155,27 @@ const TrainerForm = () => {
                         </label>
                         <label className="input-group">
                             <input type="text" name='salary' placeholder="Salary" className="input input-bordered focus:outline-none w-full" />
+                        </label>
+                    </div>
+                </div>
+                <div className='md:flex gap-6 justify-center mb-4'>
+                    <div className="form-control md:w-1/2 px-5">
+                        <label className="label">
+                            <span className='label-text font-bold'>Years of Experience
+
+                            </span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name='experience' placeholder="Year of experience" className="input input-bordered focus:outline-none w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control md:w-1/2 px-5">
+                        <label className="label">
+                            <span className='label-text font-bold'>Description
+                            </span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name='description' placeholder="Description" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
                 </div>

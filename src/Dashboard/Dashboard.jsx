@@ -36,7 +36,7 @@ const Dashboard = () => {
                             <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i>  Member Home</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/subscriber"><i className="fas fa-user-check"></i> Activity Log</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fas fa-chalkboard-teacher"></i>  Profile Settings</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Recommended Classes Page</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Recommended Classes</NavLink></li>
                             <li className="font-medium mb-3"><NavLink> <i className="fa-solid fa-dollar-sign"></i> Add new Class</NavLink></li>
                         </>
                     ) : (

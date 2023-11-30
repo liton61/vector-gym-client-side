@@ -17,6 +17,7 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const photo = e.target.photo.value;
+        const role = 'member'
 
         if (password.length < 6) {
             return Swal.fire({
@@ -55,7 +56,8 @@ const Register = () => {
                     .then(() => {
                         const usersInfo = {
                             name: name,
-                            email: email
+                            email: email,
+                            role
                         }
                         axiosPublic.post('/users', usersInfo)
                             .then(res => {
