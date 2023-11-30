@@ -21,6 +21,8 @@ import Booked from "../pages/Booked/Booked";
 import AllUsers from "../Dashboard/Allusers";
 import Balance from "../Dashboard/Balance";
 import ManageSlots from "../TrainerDashboard/ManageSlots";
+import ManageMember from "../TrainerDashboard/ManageMember";
+import AddNewForum from "../TrainerDashboard/AddNewForum";
 
 
 const router = createBrowserRouter([
@@ -108,6 +110,14 @@ const router = createBrowserRouter([
             {
                 path: "manageSlots",
                 element: <ManageSlots></ManageSlots>
+            },
+            {
+                path: "manageMember",
+                element: <ManageMember></ManageMember>
+            },
+            {
+                path: "addNewForum",
+                element: <AddNewForum></AddNewForum>
             }
         ]
     },

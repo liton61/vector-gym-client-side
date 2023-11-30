@@ -6,7 +6,7 @@ const Forum = () => {
   const [forumPosts, setForumPosts] = useState([]);
 
   useEffect(() => {
-    fetch('/forum.json')
+    fetch('http://localhost:5000/forum')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -23,7 +23,7 @@ const Forum = () => {
 
   return (
     <div>
-      <div className="w-96 mx-auto mt-28 mb-10">
+      <div className="w-96 mx-auto mt-20 mb-10">
         <h1 className="text-center text-4xl font-semibold">Forum Posts</h1>
         <hr className="border-t-4 border-pink-600 mt-2" />
       </div>

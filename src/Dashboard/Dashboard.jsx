@@ -20,6 +20,7 @@ const Dashboard = () => {
                             <li className="font-medium mb-3"><NavLink to="/dashboard/subscriber"><i className="fas fa-user-check"></i> All Subscribers</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fas fa-chalkboard-teacher"></i> All Trainers</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Applied Trainer</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/addNewForum"><i className="fa-solid fa-recycle"></i> Add new Forum</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/balance"> <i className="fa-solid fa-money-check-dollar"></i> Balance</NavLink></li>
                             {/* <li className="font-medium mb-3"><NavLink to="/dashboard/allUsers"> <i className="fa-solid fa-users"></i> All Users</NavLink></li> */}
                         </>
@@ -27,8 +28,8 @@ const Dashboard = () => {
                         <>
                             <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i>  Trainer Home</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/manageSlots"><i className="fa-solid fa-bars"></i>  Manage Slots</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fa-solid fa-user-group"></i>  Manage member</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fa-solid fa-recycle"></i> Add new Forum</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/manageMember"> <i className="fa-solid fa-user-group"></i>  Manage member</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/addNewForum"><i className="fa-solid fa-recycle"></i> Add new Forum</NavLink></li>
                             <li className="font-medium mb-3"><NavLink> <i className="fa-solid fa-dumbbell"></i> Add new Class</NavLink></li>
                         </>
                     ) : isMember ? (
