@@ -19,6 +19,8 @@ import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Forum/Forum";
 import Booked from "../pages/Booked/Booked";
 import AllUsers from "../Dashboard/Allusers";
+import Balance from "../Dashboard/Balance";
+import ManageSlots from "../TrainerDashboard/ManageSlots";
 
 
 const router = createBrowserRouter([
@@ -78,6 +80,7 @@ const router = createBrowserRouter([
 
         ],
     },
+    // Admin routes
     {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
@@ -97,6 +100,14 @@ const router = createBrowserRouter([
             {
                 path: "allUsers",
                 element: <AllUsers></AllUsers>
+            }
+            , {
+                path: "balance",
+                element: <Balance></Balance>
+            },
+            {
+                path: "manageSlots",
+                element: <ManageSlots></ManageSlots>
             }
         ]
     },
