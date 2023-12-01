@@ -62,6 +62,21 @@ const AppliedTrainer = () => {
             });
     };
 
+    const handleReject = _id => {
+        // console.log(_id);
+        fetch(`http://localhost:5000/trainerApplication/${_id}`, {
+            method: "DELETE",
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data)
+                    closeModal();
+                const updatedTrainers = trainers.filter(trainer => trainer._id !== _id);
+                setTrainers(updatedTrainers);
+                localStorage.setItem('appliedTrainers', JSON.stringify(updatedTrainers));
+            });
+    }
+
     return (
         <div>
             <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">Applied Trainers</h2>
@@ -128,7 +143,7 @@ const AppliedTrainer = () => {
                         </div>
                         <div className="modal-action">
                             <button onClick={(e) => handleConfirm(e, selectedTrainer._id)} className="btn btn-success text-white">Confirm</button>
-                            <button className="btn btn-error text-white">Reject</button>
+                            <button onClick={() => handleReject(selectedTrainer._id)} className="btn btn-error text-white">Reject</button>
                             <button className="btn btn-warning text-white" onClick={closeModal}>Close</button>
                         </div>
                     </div>

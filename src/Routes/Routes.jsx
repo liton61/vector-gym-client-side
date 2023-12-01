@@ -81,7 +81,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/booked",
-                element: <Booked></Booked>
+                element: <PrivateRoute><Booked></Booked></PrivateRoute>
             }
 
         ],
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
     // Admin routes
     {
         path: "dashboard",
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: "subscriber",
