@@ -24,6 +24,7 @@ import ManageSlots from "../TrainerDashboard/ManageSlots";
 import ManageMember from "../TrainerDashboard/ManageMember";
 import AddNewForum from "../TrainerDashboard/AddNewForum";
 import AddNewClass from "../TrainerDashboard/AddNewClass";
+import ActivityLog from "../MemberDashboard/ActivityLog";
 
 
 const router = createBrowserRouter([
@@ -123,6 +124,10 @@ const router = createBrowserRouter([
             {
                 path: "addNewClass",
                 element: <AddNewClass></AddNewClass>
+            },
+            {
+                path: "activityLog",
+                element: <ActivityLog></ActivityLog>
             }
         ]
     },
