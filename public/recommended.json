@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Weight Loss",
+        "day": "Monday",
+        "timeSlot": "5:30 AM - 7:30 AM",
+        "image": "https://i.postimg.cc/cJ5BDZC8/08.webp",
+        "description": "Embark on a transformative journey towards a healthier you with our Weight Loss sessions. Designed to support and guide you through your fitness goals, our program combines tailored workouts and expert guidance to help shed excess weight, improve stamina, and cultivate a sustainable, healthier lifestyle. Join us to achieve your weight loss aspirations and embrace a revitalized, more energetic self.",
+        "price": "$25/session"
+    },
+    {
+        "name": "Abs Gain",
+        "day": "Saturday",
+        "timeSlot": "7:00 AM - 9:00 AM",
+        "image": "https://i.postimg.cc/fLvj4zST/06.webp",
+        "description": "Discover the path to a stronger core and enhanced stability with our Abs Gain sessions. Engage in targeted workouts designed to sculpt and strengthen abdominal muscles, fostering not just a defined midsection but also promoting overall body strength and balance. Join us to unlock your core potential and elevate your fitness journey.",
+        "price": "$20/session"
+    },
+    {
+        "name": "Muscle Gain",
+        "day": "Saturday",
+        "timeSlot": "8:00 AM - 10:00 AM",
+        "image": "https://i.postimg.cc/wjtVtYZ0/03.jpg",
+        "description": "Unleash your potential and build robust strength with our Muscle Gain sessions. Tailored workouts and targeted exercises await to help you sculpt and strengthen muscles, amplifying power, and resilience. Join our community dedicated to fostering muscle growth and achieving fitness milestones, empowering you to attain your desired physique with determination and expert guidance.",
+        "price": "$22/session"
+    }
+]

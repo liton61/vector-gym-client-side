@@ -7,7 +7,7 @@ import useTrainer from "../hooks/useTrainer";
 const Dashboard = () => {
     const [isAdmin] = useAdmin();
     const [isTrainer] = useTrainer();
-    console.log(isTrainer);
+    // console.log(isTrainer);
     // const [isMember] = useMember();
     const isMember = !isAdmin && !isTrainer;
     return (
@@ -35,9 +35,9 @@ const Dashboard = () => {
                     ) : isMember ? (
                         <>
                             <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i>  Member Home</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/activityLog"><i className="fas fa-user-check"></i> Activity Log</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fas fa-chalkboard-teacher"></i>  Profile Settings</NavLink></li>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Recommended Classes</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/activityLog"><i className="fa-solid fa-chart-line"></i> Activity Log</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"><i className="fa-solid fa-user"></i>  Profile Settings</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/recommendedClasses"><i className="fas fa-check-circle"></i> Recommended Classes</NavLink></li>
                         </>
                     ) : (
                         <>
