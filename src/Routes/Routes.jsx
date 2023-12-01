@@ -26,6 +26,7 @@ import AddNewForum from "../TrainerDashboard/AddNewForum";
 import AddNewClass from "../TrainerDashboard/AddNewClass";
 import ActivityLog from "../MemberDashboard/ActivityLog";
 import RecommendedClasses from "../MemberDashboard/RecommendedClasses";
+import Profile from "../MemberDashboard/Profile";
 
 
 const router = createBrowserRouter([
@@ -133,6 +134,10 @@ const router = createBrowserRouter([
             {
                 path: "recommendedClasses",
                 element: <RecommendedClasses></RecommendedClasses>
+            },
+            {
+                path: "profile",
+                element: <Profile></Profile>,
             }
         ]
     },
