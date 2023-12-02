@@ -28,6 +28,7 @@ import ActivityLog from "../MemberDashboard/ActivityLog";
 import RecommendedClasses from "../MemberDashboard/RecommendedClasses";
 import Profile from "../MemberDashboard/Profile";
 import Db from "../TrainerDashboard/Db";
+import Payment from "../Dashboard/Payment";
 
 
 const router = createBrowserRouter([
@@ -143,6 +144,10 @@ const router = createBrowserRouter([
             {
                 path: "db",
                 element: <Db></Db>
+            },
+            {
+                path: "/dashboard/payment/:_id/:salary/:name",
+                element: <Payment></Payment>
             }
         ]
     },

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 
 const AllTrainer = () => {
@@ -10,6 +12,9 @@ const AllTrainer = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Dashboard | All Trainers</title>
+            </Helmet>
             <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">All Trainers</h2>
             <div>
                 <div className="overflow-x-auto lg:w-3/4 mx-auto">
@@ -35,7 +40,11 @@ const AllTrainer = () => {
                                         </div>
                                     </div>
                                     <td>{trainer.name}</td>
-                                    <td><button className="btn btn-success text-white">Pay Now</button></td>
+                                    <td>
+                                        <Link to={`/dashboard/payment/${trainer._id}/${trainer.salary}/${trainer.name}`}>
+                                            <button className="btn btn-success text-white">Pay Now</button>
+                                        </Link>
+                                    </td>
                                 </tr>)
                             }
                         </tbody>

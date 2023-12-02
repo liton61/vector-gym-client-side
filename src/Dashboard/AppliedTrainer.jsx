@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const AppliedTrainer = () => {
     const [trainers, setTrainers] = useState([]);
@@ -79,6 +80,9 @@ const AppliedTrainer = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dashboard | Applied Trainers</title>
+            </Helmet>
             <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">Applied Trainers</h2>
             <div className="overflow-x-auto lg:w-3/4 mx-auto">
                 <table className="table table-zebra">
