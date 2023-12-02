@@ -10,7 +10,7 @@ const SubscribeForm = () => {
 
         const subscriber = { name, email };
         console.log(subscriber);
-        fetch('http://localhost:5000/subscriber', {
+        fetch('https://vector-gym-server-side.vercel.app/subscriber', {
             method: 'POST',
             headers: {
                 'content-type': "application/json",

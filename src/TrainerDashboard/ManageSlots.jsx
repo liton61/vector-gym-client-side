@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const ManageSlots = () => {
     const [trainers, setTrainers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/trainerApplication?role=trainer')
+        fetch('https://vector-gym-server-side.vercel.app/trainerApplication?role=trainer')
             .then(res => res.json())
             .then(data => setTrainers(data))
     }, [])

@@ -18,7 +18,7 @@ const Payment = () => {
                 <title>Vector gym | Payment</title>
             </Helmet>
             <div>
-                <h2 className='text-5xl font-mono font-semibold text-center mt-5'>Payment Here</h2>
+                {/* <h2 className='text-5xl font-mono font-semibold text-center mt-5'>Payment Here</h2> */}
                 <Elements stripe={stripePromise} >
                     <CheckoutForm salary={salary} trainerId={_id} name={name} />
 

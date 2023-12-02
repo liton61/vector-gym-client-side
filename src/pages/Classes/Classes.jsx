@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 const Classes = () => {
     const [classes, setClasses] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://vector-gym-server-side.vercel.app/classes')
             .then(res => res.json())
             .then(data => setClasses(data))
     }, [])

@@ -7,7 +7,7 @@ const TrainerDetails = () => {
     const [trainerData, setTrainerData] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/trainerApplication?role=trainer`)
+        fetch(`https://vector-gym-server-side.vercel.app/trainerApplication?role=trainer`)
             .then(res => res.json())
             .then(data => {
                 const foundTrainer = data.find(trainer => trainer._id === id);

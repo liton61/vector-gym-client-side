@@ -14,7 +14,7 @@ const AddNewForum = () => {
         const postInfo = { title, upVotes, downVotes, description };
 
 
-        fetch("http://localhost:5000/forum", {
+        fetch("https://vector-gym-server-side.vercel.app/forum", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

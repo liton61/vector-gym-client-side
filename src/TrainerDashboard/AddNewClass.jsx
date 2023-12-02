@@ -21,7 +21,7 @@ const AddNewClass = () => {
         console.log(classInfo);
 
         // send data to the server
-        axiosSecure.post('http://localhost:5000/classes', classInfo)
+        axiosSecure.post('https://vector-gym-server-side.vercel.app/classes', classInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     Swal.fire({

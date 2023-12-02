@@ -6,7 +6,7 @@ const Forum = () => {
   const [forumPosts, setForumPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/forum')
+    fetch('https://vector-gym-server-side.vercel.app/forum')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

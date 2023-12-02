@@ -27,7 +27,7 @@ const Gallery = () => {
         setLoading(true);
 
         axios
-            .get('http://localhost:5000/photo', {
+            .get('https://vector-gym-server-side.vercel.app/photo', {
                 params: {
                     page: activePage,
                     size: LIMIT,

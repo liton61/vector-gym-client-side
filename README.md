@@ -1,5 +1,5 @@
-# live link : 
-- Name : Vector Gym
+# Vector Gym 
+- live link : https://vector-gym.web.app
 - It's a single page application
 - We have used react router
 - We have used firebase for authentication

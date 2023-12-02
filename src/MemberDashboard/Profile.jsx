@@ -12,7 +12,7 @@ const Profile = () => {
         const photo = e.target.photo.value;
 
 
-        fetch(`http://localhost:5000/users/${user?.email}`, {
+        fetch(`https://vector-gym-server-side.vercel.app/users/${user?.email}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

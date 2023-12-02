@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AllTrainer = () => {
     const [trainers, setTrainers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/trainerApplication?role=trainer')
+        fetch('https://vector-gym-server-side.vercel.app/trainerApplication?role=trainer')
             .then(res => res.json())
             .then(data => setTrainers(data))
     }, [])

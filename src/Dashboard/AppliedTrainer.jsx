@@ -6,7 +6,7 @@ const AppliedTrainer = () => {
     const [selectedTrainer, setSelectedTrainer] = useState(null);
 
     const fetchTrainers = () => {
-        fetch('http://localhost:5000/trainerApplication?role=member')
+        fetch('https://vector-gym-server-side.vercel.app/trainerApplication?role=member')
             .then(res => res.json())
             .then(data => {
                 setTrainers(data);
@@ -38,7 +38,7 @@ const AppliedTrainer = () => {
         e.preventDefault();
 
         const d = { role: 'trainer' };
-        fetch(`http://localhost:5000/trainerApplication/${id}`, {
+        fetch(`https://vector-gym-server-side.vercel.app/trainerApplication/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -65,7 +65,7 @@ const AppliedTrainer = () => {
 
     const handleReject = _id => {
         // console.log(_id);
-        fetch(`http://localhost:5000/trainerApplication/${_id}`, {
+        fetch(`https://vector-gym-server-side.vercel.app/trainerApplication/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

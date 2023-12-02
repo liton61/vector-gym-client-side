@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const Subscriber = () => {
     const [subscribers, setSubscriber] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/subscriber')
+        fetch('https://vector-gym-server-side.vercel.app/subscriber')
             .then(res => res.json())
             .then(data => setSubscriber(data))
     }, [])

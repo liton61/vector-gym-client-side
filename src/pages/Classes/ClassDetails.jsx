@@ -9,7 +9,7 @@ const ClassDetails = () => {
     const [classes, setClasses] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://vector-gym-server-side.vercel.app/classes')
             .then(res => res.json())
             .then(data => {
                 const classInfo = data.find(info => info._id == id);

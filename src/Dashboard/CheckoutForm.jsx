@@ -119,11 +119,11 @@ const CheckoutForm = ({ salary, trainerId, name }) => {
                 onSubmit={handleSubmit}
                 className="w-full max-w-md p-8 bg-white rounded-md shadow-md"
             >
-                <h2 className="text-2xl font-semibold mb-6 text-center">Secure Payment</h2>
+                <h2 className="text-lg font-semibold mb-6 text-center pb-10">Provide your card information</h2>
                 <div className="mb-6">
-                    <label htmlFor="cardNumber" className="block text-gray-700 text-sm font-bold mb-2">
+                    {/* <label htmlFor="cardNumber" className="block text-gray-700 text-sm font-bold mb-2">
                         Card Information
-                    </label>
+                    </label> */}
                     <CardElement
                         options={{
                             style: {
