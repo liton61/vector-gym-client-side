@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 const Subscriber = () => {
@@ -36,6 +37,9 @@ const Subscriber = () => {
                     </table>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | All Subscribers</title>
+            </Helmet>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet";
 
 
 const ManageMember = () => {
@@ -42,6 +43,9 @@ const ManageMember = () => {
                     </tbody>
                 </table>
             </div>
+            <Helmet>
+                <title>Vector Gym | Manage Member</title>
+            </Helmet>
         </div>
     );
 };

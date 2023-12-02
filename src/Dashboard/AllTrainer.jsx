@@ -13,7 +13,7 @@ const AllTrainer = () => {
     return (
         <div>
             <Helmet>
-                <title>Dashboard | All Trainers</title>
+                <title>Vector Gym | All Trainers</title>
             </Helmet>
             <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">All Trainers</h2>
             <div>

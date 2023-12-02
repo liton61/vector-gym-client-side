@@ -1,5 +1,6 @@
 import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
+import { Helmet } from "react-helmet";
 
 
 
@@ -52,6 +53,9 @@ const Profile = () => {
                     </form>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | Profile Siting</title>
+            </Helmet>
         </div>
     );
 };

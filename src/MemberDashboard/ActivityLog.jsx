@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Helmet } from "react-helmet";
+
 
 // Function to generate random values
 const getRandomValue = (array) => {
@@ -50,6 +52,9 @@ const ActivityLog = () => {
                     </div>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | Activity Log</title>
+            </Helmet>
         </div>
     );
 };

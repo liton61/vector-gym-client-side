@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 
@@ -100,6 +101,9 @@ const AddNewClass = () => {
                     <button type="submit" className="w-full bg-yellow-600 text-white py-2 px-4 rounded-lg focus:outline-none font-medium">Add Class</button>
                 </div>
             </form>
+            <Helmet>
+                <title>Vector Gym | Add New Class</title>
+            </Helmet>
         </div>
     );
 };

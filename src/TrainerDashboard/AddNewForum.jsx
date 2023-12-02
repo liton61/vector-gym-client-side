@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 
 
@@ -56,6 +57,9 @@ const AddNewForum = () => {
                     <button type="submit" className="bg-yellow-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 w-full">Post</button>
                 </form>
             </div>
+            <Helmet>
+                <title>Vector Gym | Add New Forum</title>
+            </Helmet>
         </div>
     );
 };

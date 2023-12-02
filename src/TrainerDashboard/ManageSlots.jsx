@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 const ManageSlots = () => {
@@ -43,6 +44,9 @@ const ManageSlots = () => {
                     </table>
                 </div>
             </div>
+            <Helmet>
+                <title>Vector Gym | Manage Slots</title>
+            </Helmet>
         </div>
     );
 };

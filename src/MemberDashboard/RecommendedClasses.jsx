@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import RecommendCard from "./RecommendCard";
+import { Helmet } from "react-helmet";
 
 
 const RecommendedClasses = () => {
@@ -17,6 +18,9 @@ const RecommendedClasses = () => {
                     classes?.map(cls => <RecommendCard key={cls._id} cls={cls}></RecommendCard>)
                 }
             </div>
+            <Helmet>
+                <title>Vector Gym | Recommended Classes</title>
+            </Helmet>
         </div>
     );
 };
