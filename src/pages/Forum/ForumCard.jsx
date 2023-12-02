@@ -39,7 +39,7 @@ const ForumCard = ({ post }) => {
             <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3 mb-28 transition-transform transform hover:scale-125">
                 <div className="md:flex">
                     <div className="p-8">
-                        <h2 className="text-xl font-semibold mt-2">{title}</h2>
+                        <h2 className="text-xl font-semibold mt-2">{title}<br></br><span className='text-sm'> (Admin)</span></h2>
                         <p className="text-gray-700 leading-relaxed mt-4 text-justify">{description}</p>
                     </div>
                 </div>

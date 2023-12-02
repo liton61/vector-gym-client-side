@@ -16,7 +16,7 @@ const Dashboard = () => {
                 <ul className="p-5">
                     {isAdmin ? (
                         <>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i> Admin Home</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/db"><i className="fa-solid fa-house"></i> Admin Home</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/subscriber"><i className="fas fa-user-check"></i> All Subscribers</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/allTrainer"> <i className="fas fa-chalkboard-teacher"></i> All Trainers</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/appliedTrainer"><i className="fas fa-check-circle"></i> Applied Trainer</NavLink></li>
@@ -26,7 +26,7 @@ const Dashboard = () => {
                         </>
                     ) : isTrainer ? (
                         <>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i>  Trainer Home</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/db"><i className="fa-solid fa-house"></i>  Trainer Home</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/manageSlots"><i className="fa-solid fa-bars"></i>  Manage Slots</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/manageMember"> <i className="fa-solid fa-user-group"></i>  Manage member</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/addNewForum"><i className="fa-solid fa-recycle"></i> Add new Forum</NavLink></li>
@@ -34,7 +34,7 @@ const Dashboard = () => {
                         </>
                     ) : isMember ? (
                         <>
-                            <li className="font-medium mb-3"><NavLink to="/dashboard"><i className="fa-solid fa-house"></i>  Member Home</NavLink></li>
+                            <li className="font-medium mb-3"><NavLink to="/dashboard/db"><i className="fa-solid fa-house"></i>  Member Home</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/activityLog"><i className="fa-solid fa-chart-line"></i> Activity Log</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/profile"><i className="fa-solid fa-user"></i>  Profile Settings</NavLink></li>
                             <li className="font-medium mb-3"><NavLink to="/dashboard/recommendedClasses"><i className="fas fa-check-circle"></i> Recommended Classes</NavLink></li>

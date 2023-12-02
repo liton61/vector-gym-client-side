@@ -20,7 +20,7 @@ const ManageSlots = () => {
                                 <th>#</th>
                                 <th>Day</th>
                                 <th>Time</th>
-                                {/* <th>Salary</th> */}
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,7 +36,7 @@ const ManageSlots = () => {
                                     </div> */}
                                     <td>{trainer.timeWeek}</td>
                                     <td>{trainer.timeDay}</td>
-                                    {/* <td><button className="btn btn-success text-white">Pay Now</button></td> */}
+                                    <td><i className="fa-solid fa-trash-can text-lg text-red-600 cursor-pointer"></i></td>
                                 </tr>)
                             }
                         </tbody>

@@ -32,7 +32,7 @@ const Navbar = () => {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""}>Classes</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
-                                to="/dashboard"
+                                to="/dashboard/db"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
                             <li className="mx-2 font-medium"><NavLink
@@ -64,7 +64,7 @@ const Navbar = () => {
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Classes</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/dashboard"
+                            to="/dashboard/db"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Dashboard</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink

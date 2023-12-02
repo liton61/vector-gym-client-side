@@ -33,8 +33,8 @@ const AddNewForum = () => {
     };
 
     return (
-        <div className="bg-gray-100 p-6">
-            <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10">Add New Forum</h2>
+        <div className="bg-gray-100 pb-5">
+            <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-5">Add New Forum</h2>
             <div className="w-3/4 mx-auto bg-white rounded-md p-6 shadow-md">
                 <form onSubmit={handlePost} action="#" method="POST">
                     <div className="mb-2">

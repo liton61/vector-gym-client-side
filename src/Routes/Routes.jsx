@@ -27,6 +27,7 @@ import AddNewClass from "../TrainerDashboard/AddNewClass";
 import ActivityLog from "../MemberDashboard/ActivityLog";
 import RecommendedClasses from "../MemberDashboard/RecommendedClasses";
 import Profile from "../MemberDashboard/Profile";
+import Db from "../TrainerDashboard/Db";
 
 
 const router = createBrowserRouter([
@@ -138,6 +139,10 @@ const router = createBrowserRouter([
             {
                 path: "profile",
                 element: <Profile></Profile>,
+            },
+            {
+                path: "db",
+                element: <Db></Db>
             }
         ]
     },

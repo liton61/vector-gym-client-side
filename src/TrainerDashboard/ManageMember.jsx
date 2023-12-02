@@ -25,7 +25,7 @@ const ManageMember = () => {
                             <th>Name</th>
                             <th>Email</th>
                             <th>Role</th>
-                        {/* <th>Action</th> */}
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +35,7 @@ const ManageMember = () => {
                                 <td>{user.name}</td>
                                 <td>{user.role}</td>
                                 <td>{user.email ? user.email : user.user}</td>
+                                <td><i className="fa-solid fa-trash-can text-lg text-red-600 cursor-pointer"></i></td>
                             </tr>)
                         }
 
