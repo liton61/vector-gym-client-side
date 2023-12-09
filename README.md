@@ -1,5 +1,7 @@
 # Vector Gym 
 - live link : https://vector-gym.web.app
+- It's a online gym booking web application
+- A user can book for gym using this web application
 - It's a single page application
 - We have used react router
 - We have used firebase for authentication
