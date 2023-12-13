@@ -3,7 +3,7 @@
 
 const Blogs = () => {
     return (
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="3000">
             <div className="w-96 mx-auto mt-28 mb-10">
                 <h1 className="text-center text-4xl font-semibold">Latest Articles</h1>
                 <hr className="border-t-4 border-yellow-500 mt-2" />

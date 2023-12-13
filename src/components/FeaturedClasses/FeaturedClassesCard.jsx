@@ -4,7 +4,7 @@
 const FeaturedClassesCard = ({ item }) => {
     const { title, description, instructor, image } = item;
     return (
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6" data-aos="zoom-in" data-aos-duration="3000">
             <h3 className="text-xl font-semibold mb-3">{title}</h3>
             <p className="text-gray-700">{description}</p>
             <div className="avatar flex gap-5 mt-5">

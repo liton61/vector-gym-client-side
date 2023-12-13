@@ -32,7 +32,7 @@ const SubscribeForm = () => {
     }
 
     return (
-        <section className="flex justify-center items-center py-20 bg-[#ffd166]">
+        <section className="flex justify-center items-center py-20 bg-[#ffd166]" data-aos="zoom-in" data-aos-duration="3000">
             <div className="p-6 rounded-lg shadow-md">
                 <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
                 <form onSubmit={handleSubscribe}>
