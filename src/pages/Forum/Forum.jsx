@@ -22,11 +22,8 @@ const Forum = () => {
   }, []);
 
   return (
-    <div>
-      <div className="w-96 mx-auto mt-20 mb-10">
-        <h1 className="text-center text-4xl font-semibold">Forum Posts</h1>
-        <hr className="border-t-4 border-pink-600 mt-2" />
-      </div>
+    <div className='bg-base-200 pb-10 lg:px-0 px-5'>
+      <h1 className="text-center text-4xl font-bold py-10">Forum Posts</h1>
       {forumPosts.map((post) => (<ForumCard key={post.id} post={post}></ForumCard>))}
       <Helmet>
         <title>Vector Gym | Forum</title>

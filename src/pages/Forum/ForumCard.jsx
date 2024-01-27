@@ -36,14 +36,14 @@ const ForumCard = ({ post }) => {
 
     return (
         <div>
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3 mb-28 transition-transform transform hover:scale-125">
+            <div className="lg:w-3/4 mx-auto bg-white rounded-xl shadow-md">
                 <div className="md:flex">
                     <div className="p-8">
                         <h2 className="text-xl font-semibold mt-2">{title}<br></br><span className='text-sm'> (Admin)</span></h2>
-                        <p className="text-gray-700 leading-relaxed mt-4 text-justify">{description}</p>
+                        <p className="text-gray-700 leading-relaxed mt-4 text-justify text-lg">{description}</p>
                     </div>
                 </div>
-                <div className="px-8 mb-6 flex justify-between">
+                <div className="p-8 mb-6 flex justify-between">
                     <button className='text-2xl' onClick={() => handleVote('up')} disabled={voted}>
                         <i className="fa-solid fa-thumbs-up text-blue-600 text-3xl cursor-pointer"></i> {updatedUpVotes}
                     </button>
