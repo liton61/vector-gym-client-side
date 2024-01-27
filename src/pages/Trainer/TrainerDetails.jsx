@@ -17,11 +17,11 @@ const TrainerDetails = () => {
     }, [id]);
 
     return (
-        <div>
+        <div className="lg:px-0 px-5">
             {trainerData && (
                 <div className="flex justify-center items-center mt-10">
                     <div className="relative lg:flex md:flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                        <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border sm:mx-auto">
+                        <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border mx-auto">
                             <img
                                 src={trainerData?.image}
                                 alt="image"
@@ -29,11 +29,11 @@ const TrainerDetails = () => {
                             />
                         </div>
                         <div className="p-6">
-                            <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center">
                                 {trainerData?.name}
                             </h4>
                             <Link to="/booked">
-                                <button className="bg-pink-500 text-white px-2 py-1 my-2 rounded">
+                                <button className="bg-pink-500 text-white px-2 py-1 my-2 rounded w-full font-semibold">
                                     {trainerData?.timeWeek} {trainerData?.timeDay}
                                 </button>
                             </Link>

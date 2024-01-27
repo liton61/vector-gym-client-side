@@ -6,27 +6,25 @@ import { Link } from "react-router-dom";
 const TrainerCard = ({ trainer }) => {
     const { name, experience, image, timeWeek, timeDay } = trainer;
     return (
-        <div className="relative flex flex-col text-gray-700 bg-white shadow-md lg:w-96 md:w-80 rounded-xl bg-clip-border mx-auto mb-7">
-            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg h-72 rounded-xl bg-clip-border">
-                <img className="w-64 mx-auto" src={image} alt="profile-picture" />
-            </div>
-            <div className="p-6 text-center">
-                <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                    {name}
-                </h4>
-                <p className="text-blue-600 font-medium">{timeWeek} {timeDay}</p>
-                <p className="font-medium text-blue-600">
-                    {experience}
-                </p>
-                <div>
-                    <i className="fa-brands fa-facebook mx-2 text-blue-600 hover:cursor-pointer"></i>
-                    <i className="fa-brands fa-instagram mx-2 text-red-500 hover:cursor-pointer"></i>
-                    <i className="fa-brands fa-twitter mx-2 text-blue-600 hover:cursor-pointer"></i>
-                    <i className="fa-brands fa-linkedin mx-2 text-blue-600 hover:cursor-pointer"></i>
+        <div>
+            <div className="card card-compact bg-base-100 shadow-xl h-96">
+                <figure><img className="w-36" src={image} alt="" /></figure>
+                <div className="card-body">
+                    <h2 className="text-center text-xl font-semibold">{name}</h2>
+                    <p className="text-center text-md font-medium text-blue-600">{timeWeek} {timeDay}</p>
+                    <p className="text-center text-md font-medium text-blue-600">{experience}</p>
+                    <div className="text-center">
+                        <i className="mx-3 text-lg cursor-pointer text-blue-600 fab fa-facebook"></i>
+                        <i className="mx-3 text-lg cursor-pointer text-blue-600 fab fa-twitter"></i>
+                        <i className="mx-3 text-lg cursor-pointer text-red-600 fab fa-instagram"></i>
+                        <i className="mx-3 text-lg cursor-pointer text-blue-600 fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <Link to={`/trainer/${trainer._id}`}>
+                            <button className="btn btn-active btn-secondary mt-5 w-full">Know More</button>
+                        </Link>
+                    </div>
                 </div>
-                <Link to={`/trainer/${trainer._id}`}>
-                    <button className="btn btn-active btn-secondary mt-5">Know More</button>
-                </Link>
             </div>
         </div>
     );
