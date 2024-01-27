@@ -4,10 +4,10 @@
 const FeaturesCard = ({ feature }) => {
     const { image, title, description } = feature;
     return (
-        <div className="card rounded-none h-52 image-full mx-auto">
-            <figure><img src={image} alt="" /></figure>
-            <div className="card-body">
-                <h2 className="text-center text-3xl font-semibold">{title}</h2>
+        <div className="">
+            <div className="h-64 mx-auto border p-5 rounded">
+                <figure><img className="w-24 mx-auto" src={image} alt="" /></figure>
+                <h2 className="text-center text-xl font-bold">{title}</h2>
                 <p className="text-justify">{description}</p>
             </div>
         </div>

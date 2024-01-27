@@ -13,7 +13,7 @@ const Testimonials = () => {
         <section className="py-12 bg-gray-100 lg:px-0 px-5">
             <div className="lg:w-3/4 mx-auto">
                 <h2 className="text-4xl text-center font-bold mb-10">Success Stories</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
                         testimonials.map(testimonial => <TestimonialsCard key={testimonial.id} testimonial={testimonial}></TestimonialsCard>)
                     }
