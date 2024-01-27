@@ -10,12 +10,12 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <section className="py-12 bg-gray-100">
-            <div className="container mx-auto px-4">
-            <h2 className="text-4xl text-center font-semibold border-y-4 border-yellow-500 w-80 mx-auto p-3 mb-10">Success Stories</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="py-12 bg-gray-100 lg:px-0 px-5">
+            <div className="lg:w-3/4 mx-auto">
+                <h2 className="text-4xl text-center font-bold mb-10">Success Stories</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded">
                     {
-                        testimonials.map(testimonial =><TestimonialsCard key={testimonial.id} testimonial={testimonial}></TestimonialsCard>)
+                        testimonials.map(testimonial => <TestimonialsCard key={testimonial.id} testimonial={testimonial}></TestimonialsCard>)
                     }
                 </div>
             </div>
