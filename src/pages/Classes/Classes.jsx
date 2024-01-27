@@ -11,9 +11,9 @@ const Classes = () => {
             .then(data => setClasses(data))
     }, [])
     return (
-        <div>
-            <h2 className="text-4xl text-center font-semibold border-b-4 border-blue-600 w-80 mx-auto p-2 mb-10 mt-5">Weekly Schedule</h2>
-            <div className="overflow-x-auto lg:w-1/2 mx-auto mt-10">
+        <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
+            <h2 className="text-4xl text-center font-bold mb-10 mt-5">Weekly Schedule</h2>
+            <div className="overflow-x-auto mt-10">
                 <table className="table table-zebra border">
                     {/* head */}
                     <thead>
@@ -56,8 +56,8 @@ const Classes = () => {
                     </tbody>
                 </table>
             </div>
-            <h2 className="text-4xl text-center font-semibold border-b-4 border-blue-600 w-80 mx-auto p-2 mb-10 mt-20">All Classes</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 lg:w-3/4 mx-auto">
+            <h2 className="text-4xl text-center font-bold mb-10 mt-20">All Classes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 ">
                 {
                     classes?.map(cls => <ClassCard key={cls._id} cls={cls}></ClassCard>)
                 }

@@ -17,8 +17,8 @@ const ClassDetails = () => {
             })
     }, [id])
     return (
-        <div className="py-20">
-            <div className="card lg:w-1/2 w-full bg-base-100 shadow-xl mx-auto">
+        <div className="py-10 lg:px-0 px-5">
+            <div className="card rounded-md lg:w-1/2 w-full bg-base-100 shadow-xl mx-auto">
                 <figure><img src={classes?.image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
