@@ -11,9 +11,9 @@ const Features = () => {
     }, []);
 
     return (
-        <div className="lg:w-[1080px] mx-auto">
+        <div className="lg:w-3/4 mx-auto">
             <h1 className="text-4xl text-center font-semibold border-y-4 border-yellow-500 w-60 mx-auto p-3 m-10">Featured</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-0 px-5 mb-10">
                 {
                     features.map(feature => <FeaturesCard key={feature.id} feature={feature}></FeaturesCard>)}
             </div>

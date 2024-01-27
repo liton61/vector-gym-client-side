@@ -8,10 +8,10 @@ const About = () => {
         <section className="bg-gray-100 py-12">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between">
-                    <div className="md:w-1/2" data-aos="zoom-in" data-aos-duration="3000">
+                    <div className="md:w-1/2">
                         <img src={about} alt="Gym" className="w-full rounded-lg shadow-md mb-6 md:mb-0" />
                     </div>
-                    <div className="md:w-1/2 md:pl-10" data-aos="zoom-in" data-aos-duration="3000">
+                    <div className="md:w-1/2 md:pl-10">
                         <h1 className="text-4xl text-center font-semibold border-b-4 border-yellow-500 w-60 mx-auto pb-3 m-10">About Us</h1>
                         <p className="text-gray-700 mb-6 text-justify">
                             Founded in 2009, Vector Gym is dedicated to providing a holistic fitness experience for individuals of all levels.

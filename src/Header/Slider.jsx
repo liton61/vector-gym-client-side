@@ -18,7 +18,7 @@ const Slider = () => {
                             deleteSpeed={50}
                             delaySpeed={1000}
                         /></h1>
-                    <p className="mb-5">A gym is a dedicated space designed to support physical fitness and health goals. Equipped with a variety of exercise machines, weights, and facilities, it provides an environment where individuals engage in workouts, strength training, cardio exercises, and group fitness classes.</p>
+                    <p className="mb-5 text-justify">A gym is a dedicated space designed to support physical fitness and health goals. Equipped with a variety of exercise machines, weights, and facilities, it provides an environment where individuals engage in workouts, strength training, cardio exercises, and group fitness classes.</p>
                     <Link to="/classes">
                         <button className="btn btn-active btn-secondary">Learn More <i className="fa-solid fa-arrow-right"></i></button>
                     </Link>

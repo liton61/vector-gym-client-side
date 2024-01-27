@@ -5,7 +5,7 @@ const TestimonialsCard = ({ testimonial }) => {
     const { stories, image, name } = testimonial;
     return (
         <div>
-            <div className="card card-compact lg:w-96 md:w-80 md:h-80 bg-base-100 shadow-xl mx-auto mb-5" data-aos="zoom-in" data-aos-duration="3000">
+            <div className="card card-compact lg:w-96 md:w-80 md:h-80 bg-base-100 shadow-xl mx-auto mb-5">
                 <figure><img className="h-52 w-full" src={image} alt="" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>

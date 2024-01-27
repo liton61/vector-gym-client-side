@@ -6,7 +6,7 @@ const TeamCard = ({ team }) => {
     const { image, name, experience, info } = team;
     return (
         <div>
-            <div className="flex flex-col items-center justify-center space-y-8 mt-7" data-aos="zoom-in" data-aos-duration="3000">
+            <div className="flex flex-col items-center justify-center space-y-8 mt-7">
                 <div className="max-w-sm rounded overflow-hidden shadow-lg">
                     <img className="w-52 mx-auto" src={image} alt="Profile Picture" />
                     <div className="px-6 py-4">
