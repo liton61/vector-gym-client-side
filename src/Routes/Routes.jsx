@@ -14,7 +14,6 @@ import TrainerForm from "../pages/Trainer/TrainerForm";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AllTrainer from "../Dashboard/AllTrainer";
 import AppliedTrainer from "../Dashboard/AppliedTrainer";
-import FullBlogs from "../components/Blogs/FullBlogs";
 import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Forum/Forum";
 import Booked from "../pages/Booked/Booked";
@@ -76,10 +75,6 @@ const router = createBrowserRouter([
             {
                 path: "/forum",
                 element: <Forum></Forum>
-            },
-            {
-                path: "/fullBlogs",
-                element: <FullBlogs></FullBlogs>
             },
             {
                 path: "/booked",

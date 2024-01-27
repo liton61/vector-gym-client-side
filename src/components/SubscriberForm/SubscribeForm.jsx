@@ -32,8 +32,8 @@ const SubscribeForm = () => {
     }
 
     return (
-        <section className="flex justify-center items-center py-20 bg-[#ffd166]">
-            <div className="p-6 rounded-lg shadow-md">
+        <section className="lg:w-3/4 mx-auto lg:px-0 px-5">
+            <div className="bg-[#ffd166] lg:px-20 px-5 py-10  rounded">
                 <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
                 <form onSubmit={handleSubscribe}>
                     <input
