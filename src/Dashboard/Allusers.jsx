@@ -61,19 +61,16 @@ const AllUsers = () => {
 
     return (
         <div>
-            <Helmet>
-                <title>Dashboard | All Users</title>
-            </Helmet>
             <div className="flex justify-evenly my-4">
                 {/* <h2 className="text-3xl">All Users</h2>
                 <h2 className="text-3xl">Total Users: {users.length}</h2> */}
             </div>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto lg:w-3/4 mx-auto lg:px-0 px-5">
                 <table className="table table-zebra w-full">
                     {/* head */}
                     <thead>
-                        <tr>
-                            <th></th>
+                        <tr className="bg-[#ffd166]">
+                            <th>#</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Role</th>
@@ -89,14 +86,14 @@ const AllUsers = () => {
                                 <td>
                                     {user.role === 'admin' ? 'Admin' : <button
                                         onClick={() => handleMakeAdmin(user)}
-                                        className="btn btn-success btn-lg">
+                                        className="text-green-600 text-lg">
                                         <i className="fa-solid fa-users"></i>
                                     </button>}
                                 </td>
                                 <td>
                                     <button
                                         onClick={() => handleDeleteUser(user)}
-                                        className="btn btn-error btn-lg">
+                                        className="text-red-600 text-lg">
                                         <i className="fa-solid fa-trash-can"></i>
                                     </button>
                                 </td>
@@ -106,6 +103,9 @@ const AllUsers = () => {
                     </tbody>
                 </table>
             </div>
+            <Helmet>
+                <title>Dashboard | All Users</title>
+            </Helmet>
         </div>
     );
 };

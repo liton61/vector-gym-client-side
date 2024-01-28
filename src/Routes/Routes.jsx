@@ -18,7 +18,6 @@ import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Forum/Forum";
 import Booked from "../pages/Booked/Booked";
 import AllUsers from "../Dashboard/Allusers";
-import Balance from "../Dashboard/Balance";
 import ManageSlots from "../TrainerDashboard/ManageSlots";
 import ManageMember from "../TrainerDashboard/ManageMember";
 import AddNewForum from "../TrainerDashboard/AddNewForum";
@@ -27,7 +26,6 @@ import ActivityLog from "../MemberDashboard/ActivityLog";
 import RecommendedClasses from "../MemberDashboard/RecommendedClasses";
 import Profile from "../MemberDashboard/Profile";
 import Db from "../TrainerDashboard/Db";
-import Payment from "../Dashboard/Payment";
 
 
 const router = createBrowserRouter([
@@ -103,10 +101,6 @@ const router = createBrowserRouter([
             {
                 path: "allUsers",
                 element: <AllUsers></AllUsers>
-            }
-            , {
-                path: "balance",
-                element: <Balance></Balance>
             },
             {
                 path: "manageSlots",
@@ -139,10 +133,6 @@ const router = createBrowserRouter([
             {
                 path: "db",
                 element: <Db></Db>
-            },
-            {
-                path: "/dashboard/payment/:_id/:salary/:name",
-                element: <Payment></Payment>
             }
         ]
     },

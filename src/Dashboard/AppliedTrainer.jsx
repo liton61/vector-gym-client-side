@@ -80,46 +80,52 @@ const AppliedTrainer = () => {
 
     return (
         <div>
-            <Helmet>
-                <title>Vector Gym | Applied Trainers</title>
-            </Helmet>
-            <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">Applied Trainers</h2>
-            <div className="overflow-x-auto lg:w-3/4 mx-auto">
-                <table className="table table-zebra">
-                    {/* Table headers */}
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* Render trainers */}
-                        {trainers.map((trainer, index) => (
-                            <tr key={trainer._id}>
-                                <th>{index + 1}</th>
-                                <td>
-                                    <div className="avatar">
-                                        <div className="mask mask-squircle w-12 h-12">
-                                            <img src={trainer.image} alt="Avatar" />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>{trainer.name}</td>
-                                <td>{trainer.role}</td>
-                                <td>
-                                    <button className="btn" onClick={() => openModal(trainer)}>
-                                        <i className="fa-solid fa-eye"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+            {
+                trainers.length > 0 ? (
+                    <div>
+                        <h2 className="text-4xl text-center font-bold mb-10 mt-5">Applied Trainers</h2>
+                        <div className="overflow-x-auto lg:w-3/4 mx-auto lg:px-0 px-5">
+                            <table className="table table-zebra">
+                                {/* Table headers */}
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Role</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {/* Render trainers */}
+                                    {trainers.map((trainer, index) => (
+                                        <tr key={trainer._id}>
+                                            <th>{index + 1}</th>
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="mask mask-squircle w-12 h-12">
+                                                        <img src={trainer.image} alt="Avatar" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>{trainer.name}</td>
+                                            <td>{trainer.role}</td>
+                                            <td>
+                                                <button className="btn" onClick={() => openModal(trainer)}>
+                                                    <i className="fa-solid fa-eye"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                ) :
+                    (
+                        <p className="text-3xl font-bold flex justify-center items-center h-screen">No Trainers Applied !</p>
+                    )
+            }
 
             {/* Modal for trainer details */}
             {selectedTrainer && (
@@ -153,6 +159,9 @@ const AppliedTrainer = () => {
                     </div>
                 </dialog>
             )}
+            <Helmet>
+                <title>Vector Gym | Applied Trainers</title>
+            </Helmet>
         </div>
     );
 };

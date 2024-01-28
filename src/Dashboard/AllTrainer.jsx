@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const AllTrainer = () => {
@@ -15,17 +15,17 @@ const AllTrainer = () => {
             <Helmet>
                 <title>Vector Gym | All Trainers</title>
             </Helmet>
-            <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-10 mt-5">All Trainers</h2>
+            <h2 className="text-4xl text-center font-bold mb-10 mt-5">All Trainers</h2>
             <div>
-                <div className="overflow-x-auto lg:w-3/4 mx-auto">
+                <div className="overflow-x-auto lg:w-3/4 mx-auto lg:px-0 px-5">
                     <table className="table table-zebra">
                         {/* head */}
                         <thead>
-                            <tr className="bg-yellow-500 text-white font-medium">
+                            <tr className="bg-[#ffd166] font-medium">
                                 <th>#</th>
                                 <th>Image</th>
                                 <th>Name</th>
-                                <th>Salary</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,11 +40,12 @@ const AllTrainer = () => {
                                         </div>
                                     </div>
                                     <td>{trainer.name}</td>
-                                    <td>
+                                    <td><i className="fa-solid fa-trash-can text-lg text-red-600 cursor-pointer"></i></td>
+                                    {/* <td>
                                         <Link to={`/dashboard/payment/${trainer._id}/${trainer.salary}/${trainer.name}`}>
                                             <button className="btn btn-success text-white">Pay Now</button>
                                         </Link>
-                                    </td>
+                                    </td> */}
                                 </tr>)
                             }
                         </tbody>
