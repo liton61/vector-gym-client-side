@@ -103,7 +103,7 @@ const AppliedTrainer = () => {
                                             <th>{index + 1}</th>
                                             <td>
                                                 <div className="avatar">
-                                                    <div className="mask mask-squircle w-12 h-12">
+                                                    <div className="rounded-full w-12 h-12">
                                                         <img src={trainer.image} alt="Avatar" />
                                                     </div>
                                                 </div>
