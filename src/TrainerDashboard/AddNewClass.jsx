@@ -39,8 +39,8 @@ const AddNewClass = () => {
             })
     }
     return (
-        <div className="pb-14 bg-gray-100">
-            <h2 className="text-4xl text-center font-semibold border-b-2 border-yellow-500 w-80 mx-auto p-2 mb-5">Add New Class</h2>
+        <div className="py-14 bg-gray-100 lg:px-0 px-5">
+            {/* <h2 className="text-4xl text-center font-bold mb-5">Add New Class</h2> */}
             <form onSubmit={handleApplied} className="lg:w-3/4 mx-auto bg-white p-5 rounded-lg">
                 <div className='md:flex gap-6 justify-center'>
                     <div className="form-control md:w-1/2 px-5">
@@ -98,7 +98,7 @@ const AddNewClass = () => {
                     </label>
                 </div>
                 <div className="px-5">
-                    <button type="submit" className="w-full bg-yellow-600 text-white py-2 px-4 rounded-lg focus:outline-none font-medium">Add Class</button>
+                    <button type="submit" className="w-full bg-[#ffd166] py-2 px-4 rounded-lg focus:outline-none font-bold">Add Class</button>
                 </div>
             </form>
             <Helmet>
