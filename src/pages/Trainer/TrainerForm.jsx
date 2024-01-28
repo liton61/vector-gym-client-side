@@ -59,11 +59,11 @@ const TrainerForm = () => {
     }
 
     return (
-        <div className="p-14 bg-gray-100">
-            <form onSubmit={handleApplied} className="lg:w-3/4 mx-auto bg-white p-10 rounded-lg">
-                <div className='md:flex gap-6 justify-center mb-4'>
+        <div className="py-14 bg-gray-100 lg:px-0 px-5">
+            <form onSubmit={handleApplied} className="lg:w-3/4 mx-auto bg-white lg:p-10 md:p-10 py-5 rounded-lg">
+                <div className='lg:flex gap-5 justify-center mb-4'>
 
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Full Name</span>
                         </label>
@@ -71,7 +71,7 @@ const TrainerForm = () => {
                             <input type="text" name='name' placeholder="Your Full Name" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Employer Email </span>
                         </label>
@@ -80,8 +80,8 @@ const TrainerForm = () => {
                         </label>
                     </div>
                 </div>
-                <div className='md:flex gap-6 justify-center mb-4'>
-                    <div className="form-control md:w-1/2 px-5">
+                <div className='lg:flex gap-5 justify-center mb-4'>
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Your Age</span>
                         </label>
@@ -89,7 +89,7 @@ const TrainerForm = () => {
                             <input type="number" name='age' placeholder="Enter Your Age" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Image URL</span>
                         </label>
@@ -98,8 +98,8 @@ const TrainerForm = () => {
                         </label>
                     </div>
                 </div>
-                <div className='md:flex gap-6 justify-center mb-4'>
-                    <div className="form-control md:w-1/2 px-5">
+                <div className='lg:flex gap-5 justify-center mb-4'>
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Select your skills</span>
                         </label>
@@ -128,7 +128,7 @@ const TrainerForm = () => {
                             </div>
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Available time in a week
                             </span>
@@ -138,8 +138,8 @@ const TrainerForm = () => {
                         </label>
                     </div>
                 </div>
-                <div className='md:flex gap-6 justify-center mb-4'>
-                    <div className="form-control md:w-1/2 px-5">
+                <div className='lg:flex gap-5 justify-center mb-4'>
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Available time in a day
                             </span>
@@ -148,7 +148,7 @@ const TrainerForm = () => {
                             <input type="text" name='timeDay' placeholder="Enter available time in a day" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Salary
                             </span>
@@ -158,8 +158,8 @@ const TrainerForm = () => {
                         </label>
                     </div>
                 </div>
-                <div className='md:flex gap-6 justify-center mb-4'>
-                    <div className="form-control md:w-1/2 px-5">
+                <div className='lg:flex gap-5 justify-center mb-4'>
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Years of Experience
 
@@ -169,7 +169,7 @@ const TrainerForm = () => {
                             <input type="text" name='experience' placeholder="Year of experience" className="input input-bordered focus:outline-none w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 px-5">
+                    <div className="form-control lg:w-1/2 w-full px-5">
                         <label className="label">
                             <span className='label-text font-bold'>Description
                             </span>
@@ -181,7 +181,7 @@ const TrainerForm = () => {
                 </div>
 
                 <div className="px-5">
-                    <button type="submit" className="btn btn-active btn-secondary w-full">Apply</button>
+                    <button type="submit" className="btn btn-active btn-secondary w-full font-bold">Apply</button>
                 </div>
             </form>
         </div>
