@@ -70,10 +70,10 @@ const Gallery = () => {
                 loader={<span className="loading loading-spinner loading-lg"></span>}
                 endMessage={<p className="text-center text-2xl text-pink-500 font-bold my-5"><span className="loading loading-spinner text-secondary"></span></p>}
             >
-                <div className="grid grid-cols-4 gap-5 mt-8">
+                <div className="lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 lg:px-0 px-5">
                     {gallery.map((galleries, index) => (
-                        <div key={galleries._id || index} className="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md">
-                            <img className="h-64 w-96 object-cover" src={galleries.image} alt="Card" data-aos="fade-up"
+                        <div key={galleries._id || index} className="max-w-md mx-auto bg-white rounded overflow-hidden border border-pink-500">
+                            <img className="h-full object-cover" src={galleries.image} alt="Card" data-aos="fade-up"
                                 data-aos-duration="3000" />
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2 text-center">{galleries.title}</div>
