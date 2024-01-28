@@ -11,9 +11,9 @@ const RecommendedClasses = () => {
             .then(data => setClasses(data))
     }, [])
     return (
-        <div>
-            <h1 className="text-2xl font-semibold text-center mt-5">Recommended Classes</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+        <div className="py-10">
+            <h1 className="text-2xl font-bold text-center pb-8">Recommended Classes</h1>
+            <div className="lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-0 px-5">
                 {
                     classes?.map(cls => <RecommendCard key={cls._id} cls={cls}></RecommendCard>)
                 }

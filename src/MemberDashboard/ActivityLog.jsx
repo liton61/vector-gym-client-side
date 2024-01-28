@@ -25,9 +25,9 @@ const ActivityLog = () => {
     const randomActivityType = getRandomValue(activityTypes);
 
     return (
-        <div className="mt-20">
+        <div className="mt-20 lg:px-0 px-5">
             <div className="max-w-md mx-auto bg-white rounded-md shadow-md p-6">
-                <h2 className="text-2xl font-bold mb-4">Today's Activity</h2>
+                <h2 className="text-2xl font-bold mb-4 text-center">Today's Activity</h2>
 
                 <div className="flex flex-col space-y-4">
                     <div className="flex justify-between">
